@@ -1,0 +1,21 @@
+:root {
+  /* 1. Main Structural Color (Hero, Navbar, Footer) */
+  --theme-hero: #0F172A;
+  --theme-hero-dark: #020617;
+
+  /* 2. Call to Action (Primary Buttons, Links) */
+  --theme-cta: #3B82F6;
+  --theme-cta-dark: #2563EB;
+
+  /* 3. Accent (Highlights, Badges, Logo Elements) */
+  --theme-accent: #10B981;
+  --theme-accent-dark: #059669;
+
+  /* 4. Surface Colors (Backgrounds, Borders) */
+  --theme-white: #FFFFFF;
+  --theme-secondary: #F8FAFC;
+
+  /* 5. Text Colors */
+  --theme-text-main: #0F172A;
+  --theme-text-muted: #64748B;
+}
