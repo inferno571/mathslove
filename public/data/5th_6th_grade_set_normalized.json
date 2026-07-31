@@ -7113,7 +7113,7 @@
         "4",
         "6",
         "8",
-        "9"
+        "10"
       ]
     },
     {
@@ -7324,7 +7324,7 @@
       "source_id": "ML-G6-NS-020",
       "original_grade": "6",
       "source": "cgpt qb6.xlsx",
-      "problem": "A bus seats 48 students. How many full buses are needed for 250 students?",
+      "problem": "A bus seats 48 students. How many buses are needed in total to transport 250 students?",
       "solution_type": "MCQ",
       "formula": "",
       "correct_answer": "6",
@@ -10097,8 +10097,8 @@
       "problem": "Four friends read 5, 7, 6, and 10 pages. What is the mean number of pages?",
       "solution_type": "MCQ",
       "formula": "",
-      "correct_answer": "7.5",
-      "explanation": "Total pages = 5 + 7 + 6 + 10 = 28. Mean = 28 ÷ 4 = 7.5.",
+      "correct_answer": "7",
+      "explanation": "Concept: Mean is total sum divided by number of items.\n\nStep-by-Step Solution: Sum = 5 + 7 + 6 + 10 = 28. Mean = 28 / 4 = 7.\n\nAnswer: 7",
       "difficulty": "Medium",
       "topic": "Statistics & Probability",
       "cognitive_domain": "Apply",
@@ -10270,9 +10270,9 @@
       ],
       "choices": [
         "2/5",
-        "4/10",
         "4/25",
-        "16/100"
+        "8/25",
+        "1/5"
       ]
     },
     {
