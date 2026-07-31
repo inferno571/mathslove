@@ -18,6 +18,7 @@ export default function Logo({ size = 48, showText = false, textColor = 'white',
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         style={{ flexShrink: 0 }}
+        aria-hidden="true"
       >
         {/* Heart shape - left half (blue) */}
         <path
@@ -107,6 +108,7 @@ export function LogoIcon({ size = 36 }: { size?: number }) {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       style={{ flexShrink: 0 }}
+      aria-hidden="true"
     >
       <circle cx="100" cy="100" r="98" fill="white" />
       {/* Heart shape - left half (blue) */}

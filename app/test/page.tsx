@@ -52,7 +52,11 @@ function TestContent() {
     fetch(`/data/${gradeConfig.file}`)
       .then(r => r.json())
       .then((data: QuestionSet) => {
-        const selected = selectRandomQuestions(data.questions, QUESTIONS_PER_TEST);
+        const gradeQuestions = data.questions.filter(
+          q => String(q.original_grade) === gradeConfig.gradeRange
+        );
+        const pool = gradeQuestions.length >= QUESTIONS_PER_TEST ? gradeQuestions : data.questions;
+        const selected = selectRandomQuestions(pool, QUESTIONS_PER_TEST);
         setQuestions(selected);
         setAnswers(new Array(selected.length).fill(''));
         setTimers(new Array(selected.length).fill(0));
