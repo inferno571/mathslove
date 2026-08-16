@@ -3,6 +3,7 @@
 import { useRouter } from 'next/navigation';
 import { GRADE_CONFIGS } from './lib/constants';
 import Logo from './components/Logo';
+import { AuthNav } from './components/AuthNav';
 
 export default function Home() {
   const router = useRouter();
@@ -13,9 +14,12 @@ export default function Home() {
 
   return (
     <div className="landing">
-      <nav className="nav">
-        <Logo size={48} showText textColor="white" />
-        <div style={{ fontSize: '0.85rem', opacity: 0.85 }}>Love Maths. Think Better.</div>
+      <nav className="nav" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+          <Logo size={48} showText textColor="white" />
+          <div style={{ fontSize: '0.85rem', opacity: 0.85, display: 'none' }}>Love Maths. Think Better.</div>
+        </div>
+        <AuthNav />
       </nav>
 
       <section className="hero">
@@ -115,8 +119,13 @@ export default function Home() {
         </button>
       </section>
 
-      <footer className="footer">
-        <strong>MathsLove</strong> — Love Maths. Think Better. &copy; {new Date().getFullYear()}
+      <footer className="footer" style={{ display: 'flex', flexDirection: 'column', gap: '8px', alignItems: 'center' }}>
+        <div>
+          <strong>MathsLove</strong> — Love Maths. Think Better. &copy; {new Date().getFullYear()}
+        </div>
+        <div style={{ fontSize: '0.85rem' }}>
+          <a href="/privacy" style={{ color: 'var(--blue)', textDecoration: 'none' }}>Privacy Policy</a>
+        </div>
       </footer>
     </div>
   );

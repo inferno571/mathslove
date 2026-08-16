@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { getSession } from './lib/session';
+import { AuthProvider } from './components/AuthProvider';
 
 const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://mathslove.com';
 
@@ -33,7 +35,7 @@ export const metadata: Metadata = {
   }
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
@@ -47,6 +49,10 @@ export default function RootLayout({
     "description": "A scientifically designed Math IQ assessment platform providing AI-powered analysis of mathematical intelligence.",
   };
 
+  // Fetch session on the server
+  const session = await getSession();
+  const serializableSession = session ? { userId: session.userId } : null;
+
   return (
     <html lang="en">
       <body>
@@ -54,7 +60,9 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-        {children}
+        <AuthProvider initialSession={serializableSession}>
+          {children}
+        </AuthProvider>
       </body>
     </html>
   );
