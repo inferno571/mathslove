@@ -1,7 +1,7 @@
 import 'server-only';
 import { Resend } from 'resend';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const resend = new Resend(process.env.RESEND_API_KEY || 're_dummy_key_please_set_in_env');
 
 const FROM_EMAIL = process.env.FROM_EMAIL || 'MathsLove <onboarding@resend.dev>';
 
