@@ -1,0 +1,5468 @@
+{
+  "name": "5th-6th Grade Mathematics Question Set (Normalized)",
+  "grade_band": "5th-6th Grade",
+  "target_students": "11-12 years old",
+  "description": "Normalized question format from QB GRADE 5.xlsx",
+  "questions": [
+    {
+      "id": "Q001",
+      "source_id": "Q001",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is 23 x 4?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "92",
+      "explanation": "23x4 = 92",
+      "difficulty": "Easy",
+      "topic": "Number & Operations (Base Ten)",
+      "cognitive_domain": "Place value & multi-digit multiplication",
+      "skills": [
+        "NBT-01"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "82",
+        "102",
+        "112",
+        "92"
+      ]
+    },
+    {
+      "id": "Q002",
+      "source_id": "Q002",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is 56 x 3?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "168",
+      "explanation": "56x3 = 168",
+      "difficulty": "Easy",
+      "topic": "Number & Operations (Base Ten)",
+      "cognitive_domain": "Place value & multi-digit multiplication",
+      "skills": [
+        "NBT-01"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "188",
+        "158",
+        "168",
+        "178"
+      ]
+    },
+    {
+      "id": "Q003",
+      "source_id": "Q003",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is 42 x 7?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "294",
+      "explanation": "42x7 = 294",
+      "difficulty": "Easy",
+      "topic": "Number & Operations (Base Ten)",
+      "cognitive_domain": "Place value & multi-digit multiplication",
+      "skills": [
+        "NBT-01"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "304",
+        "314",
+        "284",
+        "294"
+      ]
+    },
+    {
+      "id": "Q004",
+      "source_id": "Q004",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is 38 x 5?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "190",
+      "explanation": "38x5 = 190",
+      "difficulty": "Easy",
+      "topic": "Number & Operations (Base Ten)",
+      "cognitive_domain": "Place value & multi-digit multiplication",
+      "skills": [
+        "NBT-01"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "200",
+        "180",
+        "190",
+        "210"
+      ]
+    },
+    {
+      "id": "Q005",
+      "source_id": "Q005",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is 64 x 6?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "384",
+      "explanation": "64x6 = 384",
+      "difficulty": "Easy",
+      "topic": "Number & Operations (Base Ten)",
+      "cognitive_domain": "Place value & multi-digit multiplication",
+      "skills": [
+        "NBT-01"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "394",
+        "374",
+        "404",
+        "384"
+      ]
+    },
+    {
+      "id": "Q006",
+      "source_id": "Q006",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is 123 x 12?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "1476",
+      "explanation": "123x12 = (123x10) + (123x2) = 1476",
+      "difficulty": "Medium",
+      "topic": "Number & Operations (Base Ten)",
+      "cognitive_domain": "Place value & multi-digit multiplication",
+      "skills": [
+        "NBT-01"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "1576",
+        "1526",
+        "1376",
+        "1476"
+      ]
+    },
+    {
+      "id": "Q007",
+      "source_id": "Q007",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is 215 x 14?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "3010",
+      "explanation": "215x14 = (215x10) + (215x4) = 3010",
+      "difficulty": "Medium",
+      "topic": "Number & Operations (Base Ten)",
+      "cognitive_domain": "Place value & multi-digit multiplication",
+      "skills": [
+        "NBT-01"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "2910",
+        "3110",
+        "3010",
+        "3060"
+      ]
+    },
+    {
+      "id": "Q008",
+      "source_id": "Q008",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is 342 x 23?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "7866",
+      "explanation": "342x23 = (342x20) + (342x3) = 7866",
+      "difficulty": "Medium",
+      "topic": "Number & Operations (Base Ten)",
+      "cognitive_domain": "Place value & multi-digit multiplication",
+      "skills": [
+        "NBT-01"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "7966",
+        "7916",
+        "7866",
+        "7766"
+      ]
+    },
+    {
+      "id": "Q009",
+      "source_id": "Q009",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is 156 x 18?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "2808",
+      "explanation": "156x18 = (156x10) + (156x8) = 2808",
+      "difficulty": "Medium",
+      "topic": "Number & Operations (Base Ten)",
+      "cognitive_domain": "Place value & multi-digit multiplication",
+      "skills": [
+        "NBT-01"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "2808",
+        "2708",
+        "2908",
+        "2858"
+      ]
+    },
+    {
+      "id": "Q010",
+      "source_id": "Q010",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is 278 x 21?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "5838",
+      "explanation": "278x21 = (278x20) + (278x1) = 5838",
+      "difficulty": "Easy",
+      "topic": "Number & Operations (Base Ten)",
+      "cognitive_domain": "Place value & multi-digit multiplication",
+      "skills": [
+        "NBT-01"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "5733",
+        "5880",
+        "5838",
+        "5936"
+      ]
+    },
+    {
+      "id": "Q011",
+      "source_id": "Q011",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "A farm has 145 crates of apples with 26 apples in each crate. How many apples in total?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "3770",
+      "explanation": "145 x 26 = 3770",
+      "difficulty": "Hard",
+      "topic": "Number & Operations (Base Ten)",
+      "cognitive_domain": "Place value & multi-digit multiplication",
+      "skills": [
+        "NBT-01"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "3620",
+        "3970",
+        "3870",
+        "3770"
+      ]
+    },
+    {
+      "id": "Q012",
+      "source_id": "Q012",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "A store has 238 boxes of tiles with 17 tiles in each box. How many tiles in total?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "4046",
+      "explanation": "238 x 17 = 4046",
+      "difficulty": "Hard",
+      "topic": "Number & Operations (Base Ten)",
+      "cognitive_domain": "Place value & multi-digit multiplication",
+      "skills": [
+        "NBT-01"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "4146",
+        "3896",
+        "4246",
+        "4046"
+      ]
+    },
+    {
+      "id": "Q013",
+      "source_id": "Q013",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "A stadium has 312 rows with 15 seats in each row. How many seats in total?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "4680",
+      "explanation": "312 x 15 = 4680",
+      "difficulty": "Hard",
+      "topic": "Number & Operations (Base Ten)",
+      "cognitive_domain": "Place value & multi-digit multiplication",
+      "skills": [
+        "NBT-01"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "4780",
+        "4880",
+        "4680",
+        "4530"
+      ]
+    },
+    {
+      "id": "Q014",
+      "source_id": "Q014",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "A company has 176 buses, each carrying 24 students. How many students in total?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "4224",
+      "explanation": "176 x 24 = 4224",
+      "difficulty": "Hard",
+      "topic": "Number & Operations (Base Ten)",
+      "cognitive_domain": "Place value & multi-digit multiplication",
+      "skills": [
+        "NBT-01"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "4074",
+        "4324",
+        "4424",
+        "4224"
+      ]
+    },
+    {
+      "id": "Q015",
+      "source_id": "Q015",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is 84 divided by 4?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "21",
+      "explanation": "84/4 = 21",
+      "difficulty": "Easy",
+      "topic": "Number & Operations (Base Ten)",
+      "cognitive_domain": "Multi-digit division",
+      "skills": [
+        "NBT-02"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "21",
+        "22",
+        "23",
+        "20"
+      ]
+    },
+    {
+      "id": "Q016",
+      "source_id": "Q016",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is 96 divided by 8?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "12",
+      "explanation": "96/8 = 12",
+      "difficulty": "Easy",
+      "topic": "Number & Operations (Base Ten)",
+      "cognitive_domain": "Multi-digit division",
+      "skills": [
+        "NBT-02"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "14",
+        "12",
+        "11",
+        "13"
+      ]
+    },
+    {
+      "id": "Q017",
+      "source_id": "Q017",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is 75 divided by 5?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "15",
+      "explanation": "75/5 = 15",
+      "difficulty": "Easy",
+      "topic": "Number & Operations (Base Ten)",
+      "cognitive_domain": "Multi-digit division",
+      "skills": [
+        "NBT-02"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "16",
+        "17",
+        "14",
+        "15"
+      ]
+    },
+    {
+      "id": "Q018",
+      "source_id": "Q018",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is 108 divided by 9?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "12",
+      "explanation": "108/9 = 12",
+      "difficulty": "Easy",
+      "topic": "Number & Operations (Base Ten)",
+      "cognitive_domain": "Multi-digit division",
+      "skills": [
+        "NBT-02"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "13",
+        "14",
+        "12",
+        "11"
+      ]
+    },
+    {
+      "id": "Q019",
+      "source_id": "Q019",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is 132 divided by 12?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "11",
+      "explanation": "132/12 = 11",
+      "difficulty": "Easy",
+      "topic": "Number & Operations (Base Ten)",
+      "cognitive_domain": "Multi-digit division",
+      "skills": [
+        "NBT-02"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "13",
+        "10",
+        "12",
+        "11"
+      ]
+    },
+    {
+      "id": "Q020",
+      "source_id": "Q020",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is 468 divided by 12?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "39",
+      "explanation": "12 x 39 = 468",
+      "difficulty": "Medium",
+      "topic": "Number & Operations (Base Ten)",
+      "cognitive_domain": "Multi-digit division",
+      "skills": [
+        "NBT-02"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "39",
+        "41",
+        "37",
+        "42"
+      ]
+    },
+    {
+      "id": "Q021",
+      "source_id": "Q021",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is 552 divided by 24?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "23",
+      "explanation": "24 x 23 = 552",
+      "difficulty": "Medium",
+      "topic": "Number & Operations (Base Ten)",
+      "cognitive_domain": "Multi-digit division",
+      "skills": [
+        "NBT-02"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "23",
+        "21",
+        "26",
+        "25"
+      ]
+    },
+    {
+      "id": "Q022",
+      "source_id": "Q022",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is 714 divided by 17?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "42",
+      "explanation": "17 x 42 = 714",
+      "difficulty": "Medium",
+      "topic": "Number & Operations (Base Ten)",
+      "cognitive_domain": "Multi-digit division",
+      "skills": [
+        "NBT-02"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "42",
+        "45",
+        "40",
+        "44"
+      ]
+    },
+    {
+      "id": "Q023",
+      "source_id": "Q023",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is 864 divided by 16?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "54",
+      "explanation": "16 x 54 = 864",
+      "difficulty": "Medium",
+      "topic": "Number & Operations (Base Ten)",
+      "cognitive_domain": "Multi-digit division",
+      "skills": [
+        "NBT-02"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "56",
+        "57",
+        "52",
+        "54"
+      ]
+    },
+    {
+      "id": "Q024",
+      "source_id": "Q024",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is 945 divided by 27?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "35",
+      "explanation": "27 x 35 = 945",
+      "difficulty": "Medium",
+      "topic": "Number & Operations (Base Ten)",
+      "cognitive_domain": "Multi-digit division",
+      "skills": [
+        "NBT-02"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "33",
+        "38",
+        "35",
+        "37"
+      ]
+    },
+    {
+      "id": "Q025",
+      "source_id": "Q025",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "A shop has 1,344 apples packed equally into 28 crates. How many apples per crate?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "48",
+      "explanation": "1344/28 = 48",
+      "difficulty": "Hard",
+      "topic": "Number & Operations (Base Ten)",
+      "cognitive_domain": "Multi-digit division",
+      "skills": [
+        "NBT-02"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "44",
+        "48",
+        "52",
+        "54"
+      ]
+    },
+    {
+      "id": "Q026",
+      "source_id": "Q026",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "A warehouse has 1,536 boxes stacked equally on 32 shelves. How many boxes per shelf?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "48",
+      "explanation": "1536/32 = 48",
+      "difficulty": "Hard",
+      "topic": "Number & Operations (Base Ten)",
+      "cognitive_domain": "Multi-digit division",
+      "skills": [
+        "NBT-02"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "52",
+        "54",
+        "48",
+        "44"
+      ]
+    },
+    {
+      "id": "Q027",
+      "source_id": "Q027",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "A school has 1,764 pencils shared equally among 36 students. How many pencils per student?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "49",
+      "explanation": "1764/36 = 49",
+      "difficulty": "Hard",
+      "topic": "Number & Operations (Base Ten)",
+      "cognitive_domain": "Multi-digit division",
+      "skills": [
+        "NBT-02"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "55",
+        "45",
+        "53",
+        "49"
+      ]
+    },
+    {
+      "id": "Q028",
+      "source_id": "Q028",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "A theatre has 2,208 seats arranged equally in 46 rows. How many seats per row?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "48",
+      "explanation": "2208/46 = 48",
+      "difficulty": "Hard",
+      "topic": "Number & Operations (Base Ten)",
+      "cognitive_domain": "Multi-digit division",
+      "skills": [
+        "NBT-02"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "52",
+        "54",
+        "48",
+        "44"
+      ]
+    },
+    {
+      "id": "Q029",
+      "source_id": "Q029",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is 3.5 + 2.4?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "5.9",
+      "explanation": "3.5+2.4 = 5.9",
+      "difficulty": "Easy",
+      "topic": "Number & Operations (Base Ten)",
+      "cognitive_domain": "Decimal operations",
+      "skills": [
+        "NBT-03"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "6.2",
+        "6",
+        "5.9",
+        "5.7"
+      ]
+    },
+    {
+      "id": "Q030",
+      "source_id": "Q030",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is 4.6 + 1.8?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "6.4",
+      "explanation": "4.6+1.8 = 6.4",
+      "difficulty": "Easy",
+      "topic": "Number & Operations (Base Ten)",
+      "cognitive_domain": "Decimal operations",
+      "skills": [
+        "NBT-03"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "6.4",
+        "6.5",
+        "6.2",
+        "6.7"
+      ]
+    },
+    {
+      "id": "Q031",
+      "source_id": "Q031",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is 7.2 - 3.5?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "3.7",
+      "explanation": "7.2-3.5 = 3.7",
+      "difficulty": "Easy",
+      "topic": "Number & Operations (Base Ten)",
+      "cognitive_domain": "Decimal operations",
+      "skills": [
+        "NBT-03"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "3.5",
+        "3.7",
+        "4",
+        "3.8"
+      ]
+    },
+    {
+      "id": "Q032",
+      "source_id": "Q032",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is 5.9 - 2.6?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "3.3",
+      "explanation": "5.9-2.6 = 3.3",
+      "difficulty": "Easy",
+      "topic": "Number & Operations (Base Ten)",
+      "cognitive_domain": "Decimal operations",
+      "skills": [
+        "NBT-03"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "3.3",
+        "3.6",
+        "3.1",
+        "3.4"
+      ]
+    },
+    {
+      "id": "Q033",
+      "source_id": "Q033",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is 6.4 + 1.9?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "8.3",
+      "explanation": "6.4+1.9 = 8.3",
+      "difficulty": "Easy",
+      "topic": "Number & Operations (Base Ten)",
+      "cognitive_domain": "Decimal operations",
+      "skills": [
+        "NBT-03"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "8.3",
+        "8.4",
+        "8.1",
+        "8.6"
+      ]
+    },
+    {
+      "id": "Q034",
+      "source_id": "Q034",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is 4.2 x 3?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "12.6",
+      "explanation": "4.2x3 = 12.6",
+      "difficulty": "Medium",
+      "topic": "Number & Operations (Base Ten)",
+      "cognitive_domain": "Decimal operations",
+      "skills": [
+        "NBT-03"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "13.2",
+        "13.6",
+        "12.6",
+        "12.2"
+      ]
+    },
+    {
+      "id": "Q035",
+      "source_id": "Q035",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is 3.6 x 4?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "14.4",
+      "explanation": "3.6x4 = 14.4",
+      "difficulty": "Medium",
+      "topic": "Number & Operations (Base Ten)",
+      "cognitive_domain": "Decimal operations",
+      "skills": [
+        "NBT-03"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "15",
+        "14",
+        "14.4",
+        "15.4"
+      ]
+    },
+    {
+      "id": "Q036",
+      "source_id": "Q036",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is 2.8 x 5?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "14",
+      "explanation": "2.8x5 = 14.0",
+      "difficulty": "Medium",
+      "topic": "Number & Operations (Base Ten)",
+      "cognitive_domain": "Decimal operations",
+      "skills": [
+        "NBT-03"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "14.6",
+        "13.6",
+        "15",
+        "14"
+      ]
+    },
+    {
+      "id": "Q037",
+      "source_id": "Q037",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is 1.9 x 6?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "11.4",
+      "explanation": "1.9x6 = 11.4",
+      "difficulty": "Medium",
+      "topic": "Number & Operations (Base Ten)",
+      "cognitive_domain": "Decimal operations",
+      "skills": [
+        "NBT-03"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "12",
+        "11.4",
+        "11",
+        "12.4"
+      ]
+    },
+    {
+      "id": "Q038",
+      "source_id": "Q038",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is 5.4 x 3?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "16.2",
+      "explanation": "5.4x3 = 16.2",
+      "difficulty": "Medium",
+      "topic": "Number & Operations (Base Ten)",
+      "cognitive_domain": "Decimal operations",
+      "skills": [
+        "NBT-03"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "16.2",
+        "15.8",
+        "16.8",
+        "17.2"
+      ]
+    },
+    {
+      "id": "Q039",
+      "source_id": "Q039",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is 7.65 divided by 5?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "1.53",
+      "explanation": "7.65/5 = 1.53",
+      "difficulty": "Hard",
+      "topic": "Number & Operations (Base Ten)",
+      "cognitive_domain": "Decimal operations",
+      "skills": [
+        "NBT-03"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "1.73",
+        "1.53",
+        "1.83",
+        "1.38"
+      ]
+    },
+    {
+      "id": "Q040",
+      "source_id": "Q040",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is 9.36 divided by 4?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "2.34",
+      "explanation": "9.36/4 = 2.34",
+      "difficulty": "Hard",
+      "topic": "Number & Operations (Base Ten)",
+      "cognitive_domain": "Decimal operations",
+      "skills": [
+        "NBT-03"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "2.64",
+        "2.54",
+        "2.19",
+        "2.34"
+      ]
+    },
+    {
+      "id": "Q041",
+      "source_id": "Q041",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is 12.4 divided by 8?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "1.55",
+      "explanation": "12.4/8 = 1.55",
+      "difficulty": "Hard",
+      "topic": "Number & Operations (Base Ten)",
+      "cognitive_domain": "Decimal operations",
+      "skills": [
+        "NBT-03"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "1.85",
+        "1.75",
+        "1.55",
+        "1.4"
+      ]
+    },
+    {
+      "id": "Q042",
+      "source_id": "Q042",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is 15.75 divided by 3?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "5.25",
+      "explanation": "15.75/3 = 5.25",
+      "difficulty": "Hard",
+      "topic": "Number & Operations (Base Ten)",
+      "cognitive_domain": "Decimal operations",
+      "skills": [
+        "NBT-03"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "5.1",
+        "5.45",
+        "5.25",
+        "5.55"
+      ]
+    },
+    {
+      "id": "Q043",
+      "source_id": "Q043",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is 8.4 divided by 6?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "1.4",
+      "explanation": "8.4/6 = 1.4",
+      "difficulty": "Hard",
+      "topic": "Number & Operations (Base Ten)",
+      "cognitive_domain": "Decimal operations",
+      "skills": [
+        "NBT-03"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "1.7",
+        "1.6",
+        "1.25",
+        "1.4"
+      ]
+    },
+    {
+      "id": "Q044",
+      "source_id": "Q044",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is 1/4 + 1/4?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "1/2",
+      "explanation": "1/4+1/4 = 1/2",
+      "difficulty": "Easy",
+      "topic": "Fractions",
+      "cognitive_domain": "Add/subtract unlike denominators",
+      "skills": [
+        "NF-01"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "1/4",
+        "1/2",
+        "3/8",
+        "3/5"
+      ]
+    },
+    {
+      "id": "Q045",
+      "source_id": "Q045",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is 1/2 + 1/4?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "3/4",
+      "explanation": "1/2+1/4 = 3/4",
+      "difficulty": "Easy",
+      "topic": "Fractions",
+      "cognitive_domain": "Add/subtract unlike denominators",
+      "skills": [
+        "NF-01"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "17/20",
+        "3/4",
+        "1/3",
+        "5/8"
+      ]
+    },
+    {
+      "id": "Q046",
+      "source_id": "Q046",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is 1/3 + 1/3?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "2/3",
+      "explanation": "1/3+1/3 = 2/3",
+      "difficulty": "Easy",
+      "topic": "Fractions",
+      "cognitive_domain": "Add/subtract unlike denominators",
+      "skills": [
+        "NF-01"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "13/24",
+        "2/3",
+        "1/3",
+        "23/30"
+      ]
+    },
+    {
+      "id": "Q047",
+      "source_id": "Q047",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is 2/5 + 1/5?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "3/5",
+      "explanation": "2/5+1/5 = 3/5",
+      "difficulty": "Easy",
+      "topic": "Fractions",
+      "cognitive_domain": "Add/subtract unlike denominators",
+      "skills": [
+        "NF-01"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "3/10",
+        "7/10",
+        "19/40",
+        "3/5"
+      ]
+    },
+    {
+      "id": "Q048",
+      "source_id": "Q048",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is 3/4 - 1/4?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "1/2",
+      "explanation": "3/4-1/4 = 1/2",
+      "difficulty": "Easy",
+      "topic": "Fractions",
+      "cognitive_domain": "Add/subtract unlike denominators",
+      "skills": [
+        "NF-01"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "3/5",
+        "3/8",
+        "1/2",
+        "7/12"
+      ]
+    },
+    {
+      "id": "Q049",
+      "source_id": "Q049",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is 1/3 + 1/6?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "1/2",
+      "explanation": "Using a common denominator: 1/3+1/6 = 1/2",
+      "difficulty": "Medium",
+      "topic": "Fractions",
+      "cognitive_domain": "Add/subtract unlike denominators",
+      "skills": [
+        "NF-01"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "9/20",
+        "1/2",
+        "2/9",
+        "7/12"
+      ]
+    },
+    {
+      "id": "Q050",
+      "source_id": "Q050",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is 1/4 + 1/6?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "5/12",
+      "explanation": "Using a common denominator: 1/4+1/6 = 5/12",
+      "difficulty": "Medium",
+      "topic": "Fractions",
+      "cognitive_domain": "Add/subtract unlike denominators",
+      "skills": [
+        "NF-01"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "1/5",
+        "1/2",
+        "11/30",
+        "5/12"
+      ]
+    },
+    {
+      "id": "Q051",
+      "source_id": "Q051",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is 2/3 + 1/4?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "11/12",
+      "explanation": "Using a common denominator: 2/3+1/4 = 11/12",
+      "difficulty": "Medium",
+      "topic": "Fractions",
+      "cognitive_domain": "Add/subtract unlike denominators",
+      "skills": [
+        "NF-01"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "13/15",
+        "3/7",
+        "1",
+        "11/12"
+      ]
+    },
+    {
+      "id": "Q052",
+      "source_id": "Q052",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is 3/5 - 1/10?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "1/2",
+      "explanation": "Using a common denominator: 3/5-1/10 = 1/2",
+      "difficulty": "Medium",
+      "topic": "Fractions",
+      "cognitive_domain": "Add/subtract unlike denominators",
+      "skills": [
+        "NF-01"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "4/15",
+        "9/20",
+        "7/12",
+        "1/2"
+      ]
+    },
+    {
+      "id": "Q053",
+      "source_id": "Q053",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is 1/2 - 1/3?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "1/6",
+      "explanation": "Using a common denominator: 1/2-1/3 = 1/6",
+      "difficulty": "Medium",
+      "topic": "Fractions",
+      "cognitive_domain": "Add/subtract unlike denominators",
+      "skills": [
+        "NF-01"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "1/6",
+        "7/60",
+        "1/4",
+        "2/5"
+      ]
+    },
+    {
+      "id": "Q054",
+      "source_id": "Q054",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is 5/6 - 3/4?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "1/12",
+      "explanation": "Using a common denominator: 5/6-3/4 = 1/12",
+      "difficulty": "Hard",
+      "topic": "Fractions",
+      "cognitive_domain": "Add/subtract unlike denominators",
+      "skills": [
+        "NF-01"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "1/12",
+        "1/8",
+        "1/6",
+        "4/5"
+      ]
+    },
+    {
+      "id": "Q055",
+      "source_id": "Q055",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is 7/8 - 1/3?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "13/24",
+      "explanation": "Using a common denominator: 7/8-1/3 = 13/24",
+      "difficulty": "Hard",
+      "topic": "Fractions",
+      "cognitive_domain": "Add/subtract unlike denominators",
+      "skills": [
+        "NF-01"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "11/24",
+        "13/24",
+        "7/12",
+        "8/11"
+      ]
+    },
+    {
+      "id": "Q056",
+      "source_id": "Q056",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is 5/6 + 2/3?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "3/2",
+      "explanation": "Using a common denominator: 5/6+2/3 = 3/2",
+      "difficulty": "Hard",
+      "topic": "Fractions",
+      "cognitive_domain": "Add/subtract unlike denominators",
+      "skills": [
+        "NF-01"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "3/2",
+        "17/12",
+        "7/9",
+        "37/24"
+      ]
+    },
+    {
+      "id": "Q057",
+      "source_id": "Q057",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is 3/4 + 5/6?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "19/12",
+      "explanation": "Using a common denominator: 3/4+5/6 = 19/12",
+      "difficulty": "Hard",
+      "topic": "Fractions",
+      "cognitive_domain": "Add/subtract unlike denominators",
+      "skills": [
+        "NF-01"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "19/12",
+        "4/5",
+        "13/8",
+        "3/2"
+      ]
+    },
+    {
+      "id": "Q058",
+      "source_id": "Q058",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is 1/2 x 4?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "2",
+      "explanation": "1/2x4 = 2",
+      "difficulty": "Easy",
+      "topic": "Fractions",
+      "cognitive_domain": "Multiply fractions & whole numbers",
+      "skills": [
+        "NF-02"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "5/2",
+        "5/3",
+        "13/5",
+        "2"
+      ]
+    },
+    {
+      "id": "Q059",
+      "source_id": "Q059",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is 1/3 x 6?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "2",
+      "explanation": "1/3x6 = 2",
+      "difficulty": "Easy",
+      "topic": "Fractions",
+      "cognitive_domain": "Multiply fractions & whole numbers",
+      "skills": [
+        "NF-02"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "5/3",
+        "7/3",
+        "5/2",
+        "2"
+      ]
+    },
+    {
+      "id": "Q060",
+      "source_id": "Q060",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is 2/3 x 3?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "2",
+      "explanation": "2/3x3 = 2",
+      "difficulty": "Easy",
+      "topic": "Fractions",
+      "cognitive_domain": "Multiply fractions & whole numbers",
+      "skills": [
+        "NF-02"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "7/3",
+        "2",
+        "5/3",
+        "5/2"
+      ]
+    },
+    {
+      "id": "Q061",
+      "source_id": "Q061",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is 1/4 x 8?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "2",
+      "explanation": "1/4x8 = 2",
+      "difficulty": "Easy",
+      "topic": "Fractions",
+      "cognitive_domain": "Multiply fractions & whole numbers",
+      "skills": [
+        "NF-02"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "5/2",
+        "5/3",
+        "9/4",
+        "2"
+      ]
+    },
+    {
+      "id": "Q062",
+      "source_id": "Q062",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is 3/5 x 5?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "3",
+      "explanation": "3/5x5 = 3",
+      "difficulty": "Easy",
+      "topic": "Fractions",
+      "cognitive_domain": "Multiply fractions & whole numbers",
+      "skills": [
+        "NF-02"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "16/5",
+        "8/3",
+        "3",
+        "7/2"
+      ]
+    },
+    {
+      "id": "Q063",
+      "source_id": "Q063",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is 2/3 x 3/5?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "2/5",
+      "explanation": "2/3 x 3/5 = 2x3/3x5 = 2/5",
+      "difficulty": "Medium",
+      "topic": "Fractions",
+      "cognitive_domain": "Multiply fractions & whole numbers",
+      "skills": [
+        "NF-02"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "19/15",
+        "1/2",
+        "2/5",
+        "1/3"
+      ]
+    },
+    {
+      "id": "Q064",
+      "source_id": "Q064",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is 1/2 x 2/5?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "1/5",
+      "explanation": "1/2 x 2/5 = 1x2/2x5 = 1/5",
+      "difficulty": "Medium",
+      "topic": "Fractions",
+      "cognitive_domain": "Multiply fractions & whole numbers",
+      "skills": [
+        "NF-02"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "1/5",
+        "9/10",
+        "7/20",
+        "3/10"
+      ]
+    },
+    {
+      "id": "Q065",
+      "source_id": "Q065",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is 3/4 x 1/3?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "1/4",
+      "explanation": "3/4 x 1/3 = 3x1/4x3 = 1/4",
+      "difficulty": "Medium",
+      "topic": "Fractions",
+      "cognitive_domain": "Multiply fractions & whole numbers",
+      "skills": [
+        "NF-02"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "7/20",
+        "1/4",
+        "1/3",
+        "13/12"
+      ]
+    },
+    {
+      "id": "Q066",
+      "source_id": "Q066",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is 2/5 x 5/6?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "1/3",
+      "explanation": "2/5 x 5/6 = 2x5/5x6 = 1/3",
+      "difficulty": "Medium",
+      "topic": "Fractions",
+      "cognitive_domain": "Multiply fractions & whole numbers",
+      "skills": [
+        "NF-02"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "7/30",
+        "37/30",
+        "1/3",
+        "13/30"
+      ]
+    },
+    {
+      "id": "Q067",
+      "source_id": "Q067",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is 3/7 x 2/3?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "2/7",
+      "explanation": "3/7 x 2/3 = 3x2/7x3 = 2/7",
+      "difficulty": "Medium",
+      "topic": "Fractions",
+      "cognitive_domain": "Multiply fractions & whole numbers",
+      "skills": [
+        "NF-02"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "23/21",
+        "5/21",
+        "2/7",
+        "27/70"
+      ]
+    },
+    {
+      "id": "Q068",
+      "source_id": "Q068",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "A recipe needs 3/4 cup(s) of sugar per batch for each batch. How much is needed for 5 batches?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "3 3/4",
+      "explanation": "3/4 x 5 = 15/4 = 3 3/4",
+      "difficulty": "Hard",
+      "topic": "Fractions",
+      "cognitive_domain": "Multiply fractions & whole numbers",
+      "skills": [
+        "NF-02"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "4 1/12",
+        "4 1/4",
+        "3 1/2",
+        "3 3/4"
+      ]
+    },
+    {
+      "id": "Q069",
+      "source_id": "Q069",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "A recipe needs 2/3 liters of paint per wall for each batch. How much is needed for 4 batches?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "2 2/3",
+      "explanation": "2/3 x 4 = 8/3 = 2 2/3",
+      "difficulty": "Hard",
+      "topic": "Fractions",
+      "cognitive_domain": "Multiply fractions & whole numbers",
+      "skills": [
+        "NF-02"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "2 2/3",
+        "3",
+        "3 1/6",
+        "2 5/12"
+      ]
+    },
+    {
+      "id": "Q070",
+      "source_id": "Q070",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "A recipe needs 5/8 kg of flour per loaf for each batch. How much is needed for 6 batches?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "3 3/4",
+      "explanation": "5/8 x 6 = 15/4 = 3 3/4",
+      "difficulty": "Hard",
+      "topic": "Fractions",
+      "cognitive_domain": "Multiply fractions & whole numbers",
+      "skills": [
+        "NF-02"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "4 1/4",
+        "3 3/4",
+        "3 1/2",
+        "4 1/12"
+      ]
+    },
+    {
+      "id": "Q071",
+      "source_id": "Q071",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "A recipe needs 3/5 meters of rope per piece for each batch. How much is needed for 7 batches?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "4 1/5",
+      "explanation": "3/5 x 7 = 21/5 = 4 1/5",
+      "difficulty": "Hard",
+      "topic": "Fractions",
+      "cognitive_domain": "Multiply fractions & whole numbers",
+      "skills": [
+        "NF-02"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "3 19/20",
+        "4 7/10",
+        "4 8/15",
+        "4 1/5"
+      ]
+    },
+    {
+      "id": "Q072",
+      "source_id": "Q072",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is 1/2 divided by 2?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "1/4",
+      "explanation": "1/2 divided by 2 = 1/2 x 1/2 = 1/4",
+      "difficulty": "Easy",
+      "topic": "Fractions",
+      "cognitive_domain": "Divide unit fractions",
+      "skills": [
+        "NF-03"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "1/5",
+        "2/5",
+        "1/4",
+        "1/2"
+      ]
+    },
+    {
+      "id": "Q073",
+      "source_id": "Q073",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is 1/3 divided by 2?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "1/6",
+      "explanation": "1/3 divided by 2 = 1/3 x 1/2 = 1/6",
+      "difficulty": "Easy",
+      "topic": "Fractions",
+      "cognitive_domain": "Divide unit fractions",
+      "skills": [
+        "NF-03"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "1/3",
+        "1/2",
+        "1/6",
+        "1/7"
+      ]
+    },
+    {
+      "id": "Q074",
+      "source_id": "Q074",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is 1/4 divided by 2?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "1/8",
+      "explanation": "1/4 divided by 2 = 1/4 x 1/2 = 1/8",
+      "difficulty": "Easy",
+      "topic": "Fractions",
+      "cognitive_domain": "Divide unit fractions",
+      "skills": [
+        "NF-03"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "1/4",
+        "1/8",
+        "1/2",
+        "1/9"
+      ]
+    },
+    {
+      "id": "Q075",
+      "source_id": "Q075",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is 1/2 divided by 3?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "1/6",
+      "explanation": "1/2 divided by 3 = 1/2 x 1/3 = 1/6",
+      "difficulty": "Easy",
+      "topic": "Fractions",
+      "cognitive_domain": "Divide unit fractions",
+      "skills": [
+        "NF-03"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "19/60",
+        "1/6",
+        "1/7",
+        "1/3"
+      ]
+    },
+    {
+      "id": "Q076",
+      "source_id": "Q076",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is 1/3 divided by 3?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "1/9",
+      "explanation": "1/3 divided by 3 = 1/3 x 1/3 = 1/9",
+      "difficulty": "Easy",
+      "topic": "Fractions",
+      "cognitive_domain": "Divide unit fractions",
+      "skills": [
+        "NF-03"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "2/9",
+        "1/3",
+        "1/10",
+        "1/9"
+      ]
+    },
+    {
+      "id": "Q077",
+      "source_id": "Q077",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is 1/3 divided by 4?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "1/12",
+      "explanation": "1/3 divided by 4 = 1/12",
+      "difficulty": "Medium",
+      "topic": "Fractions",
+      "cognitive_domain": "Divide unit fractions",
+      "skills": [
+        "NF-03"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "1/6",
+        "2/15",
+        "1/4",
+        "1/12"
+      ]
+    },
+    {
+      "id": "Q078",
+      "source_id": "Q078",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is 1/4 divided by 5?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "1/20",
+      "explanation": "1/4 divided by 5 = 1/20",
+      "difficulty": "Medium",
+      "topic": "Fractions",
+      "cognitive_domain": "Divide unit fractions",
+      "skills": [
+        "NF-03"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "1/10",
+        "1/5",
+        "3/20",
+        "1/20"
+      ]
+    },
+    {
+      "id": "Q079",
+      "source_id": "Q079",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is 1/5 divided by 3?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "1/15",
+      "explanation": "1/5 divided by 3 = 1/15",
+      "difficulty": "Medium",
+      "topic": "Fractions",
+      "cognitive_domain": "Divide unit fractions",
+      "skills": [
+        "NF-03"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "1/15",
+        "1/3",
+        "2/15",
+        "7/60"
+      ]
+    },
+    {
+      "id": "Q080",
+      "source_id": "Q080",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is 1/6 divided by 2?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "1/12",
+      "explanation": "1/6 divided by 2 = 1/12",
+      "difficulty": "Medium",
+      "topic": "Fractions",
+      "cognitive_domain": "Divide unit fractions",
+      "skills": [
+        "NF-03"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "1/2",
+        "1/12",
+        "2/15",
+        "1/6"
+      ]
+    },
+    {
+      "id": "Q081",
+      "source_id": "Q081",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "4 friends share 1/2 of a pizza equally. What fraction does each get?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "1/8",
+      "explanation": "1/2 divided by 4 = 1/8",
+      "difficulty": "Hard",
+      "topic": "Fractions",
+      "cognitive_domain": "Divide unit fractions",
+      "skills": [
+        "NF-03"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "7/40",
+        "1/8",
+        "49/200",
+        "1/4"
+      ]
+    },
+    {
+      "id": "Q082",
+      "source_id": "Q082",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "3 students share 1/3 of a cake equally. What fraction does each get?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "1/9",
+      "explanation": "1/3 divided by 3 = 1/9",
+      "difficulty": "Hard",
+      "topic": "Fractions",
+      "cognitive_domain": "Divide unit fractions",
+      "skills": [
+        "NF-03"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "1/9",
+        "1/3",
+        "2/9",
+        "29/180"
+      ]
+    },
+    {
+      "id": "Q083",
+      "source_id": "Q083",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "2 people share 1/4 of a loaf of bread equally. What fraction does each get?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "1/8",
+      "explanation": "1/4 divided by 2 = 1/8",
+      "difficulty": "Hard",
+      "topic": "Fractions",
+      "cognitive_domain": "Divide unit fractions",
+      "skills": [
+        "NF-03"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "1/8",
+        "7/40",
+        "1/4",
+        "1/2"
+      ]
+    },
+    {
+      "id": "Q084",
+      "source_id": "Q084",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "5 crafts share 1/2 of a ribbon equally. What fraction does each get?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "1/10",
+      "explanation": "1/2 divided by 5 = 1/10",
+      "difficulty": "Hard",
+      "topic": "Fractions",
+      "cognitive_domain": "Divide unit fractions",
+      "skills": [
+        "NF-03"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "3/20",
+        "11/50",
+        "1/10",
+        "1/5"
+      ]
+    },
+    {
+      "id": "Q085",
+      "source_id": "Q085",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is 3 + 2 x 4?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "11",
+      "explanation": "Multiply first: 2x4=8, then 3+8=11",
+      "difficulty": "Easy",
+      "topic": "Algebraic Thinking",
+      "cognitive_domain": "Order of operations",
+      "skills": [
+        "OA-01"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "16",
+        "8",
+        "11",
+        "14"
+      ]
+    },
+    {
+      "id": "Q086",
+      "source_id": "Q086",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is 5 + 3 x 2?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "11",
+      "explanation": "Multiply first: 3x2=6, then 5+6=11",
+      "difficulty": "Easy",
+      "topic": "Algebraic Thinking",
+      "cognitive_domain": "Order of operations",
+      "skills": [
+        "OA-01"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "14",
+        "16",
+        "11",
+        "8"
+      ]
+    },
+    {
+      "id": "Q087",
+      "source_id": "Q087",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is 8 - 2 x 3?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "2",
+      "explanation": "Multiply first: 2x3=6, then 8-6=2",
+      "difficulty": "Easy",
+      "topic": "Algebraic Thinking",
+      "cognitive_domain": "Order of operations",
+      "skills": [
+        "OA-01"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "5",
+        "2",
+        "7",
+        "8"
+      ]
+    },
+    {
+      "id": "Q088",
+      "source_id": "Q088",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is 4 + 6 x 2?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "16",
+      "explanation": "Multiply first: 6x2=12, then 4+12=16",
+      "difficulty": "Easy",
+      "topic": "Algebraic Thinking",
+      "cognitive_domain": "Order of operations",
+      "skills": [
+        "OA-01"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "19",
+        "21",
+        "13",
+        "16"
+      ]
+    },
+    {
+      "id": "Q089",
+      "source_id": "Q089",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is 10 - 3 x 5?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "-5",
+      "explanation": "Multiply first: 3x5=15, then 10-15=-5",
+      "difficulty": "Easy",
+      "topic": "Algebraic Thinking",
+      "cognitive_domain": "Order of operations",
+      "skills": [
+        "OA-01"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "2",
+        "5",
+        "-5",
+        "1"
+      ]
+    },
+    {
+      "id": "Q090",
+      "source_id": "Q090",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is (6 + 4) x 2?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "20",
+      "explanation": "Parentheses first: 6+4=10, then x2=20",
+      "difficulty": "Medium",
+      "topic": "Algebraic Thinking",
+      "cognitive_domain": "Order of operations",
+      "skills": [
+        "OA-01"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "16",
+        "20",
+        "26",
+        "24"
+      ]
+    },
+    {
+      "id": "Q091",
+      "source_id": "Q091",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is (9 + 3) x 2?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "24",
+      "explanation": "Parentheses first: 9+3=12, then x2=24",
+      "difficulty": "Medium",
+      "topic": "Algebraic Thinking",
+      "cognitive_domain": "Order of operations",
+      "skills": [
+        "OA-01"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "30",
+        "24",
+        "20",
+        "28"
+      ]
+    },
+    {
+      "id": "Q092",
+      "source_id": "Q092",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is (12 - 4) x 3?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "24",
+      "explanation": "Parentheses first: 12-4=8, then x3=24",
+      "difficulty": "Medium",
+      "topic": "Algebraic Thinking",
+      "cognitive_domain": "Order of operations",
+      "skills": [
+        "OA-01"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "30",
+        "20",
+        "28",
+        "24"
+      ]
+    },
+    {
+      "id": "Q093",
+      "source_id": "Q093",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is (7 + 5) x 2?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "24",
+      "explanation": "Parentheses first: 7+5=12, then x2=24",
+      "difficulty": "Medium",
+      "topic": "Algebraic Thinking",
+      "cognitive_domain": "Order of operations",
+      "skills": [
+        "OA-01"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "30",
+        "28",
+        "24",
+        "20"
+      ]
+    },
+    {
+      "id": "Q094",
+      "source_id": "Q094",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is (15 - 3) x 4?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "48",
+      "explanation": "Parentheses first: 15-3=12, then x4=48",
+      "difficulty": "Medium",
+      "topic": "Algebraic Thinking",
+      "cognitive_domain": "Order of operations",
+      "skills": [
+        "OA-01"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "48",
+        "44",
+        "54",
+        "52"
+      ]
+    },
+    {
+      "id": "Q095",
+      "source_id": "Q095",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is 2 x (3 + 5) - 4?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "12",
+      "explanation": "3+5=8, 2x8=16, 16-4=12",
+      "difficulty": "Hard",
+      "topic": "Algebraic Thinking",
+      "cognitive_domain": "Order of operations",
+      "skills": [
+        "OA-01"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "12",
+        "18",
+        "8",
+        "16"
+      ]
+    },
+    {
+      "id": "Q096",
+      "source_id": "Q096",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is 3 x (4 + 2) - 6?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "12",
+      "explanation": "4+2=6, 3x6=18, 18-6=12",
+      "difficulty": "Hard",
+      "topic": "Algebraic Thinking",
+      "cognitive_domain": "Order of operations",
+      "skills": [
+        "OA-01"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "8",
+        "12",
+        "16",
+        "18"
+      ]
+    },
+    {
+      "id": "Q097",
+      "source_id": "Q097",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is 4 x (2 + 6) - 3?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "29",
+      "explanation": "2+6=8, 4x8=32, 32-3=29",
+      "difficulty": "Hard",
+      "topic": "Algebraic Thinking",
+      "cognitive_domain": "Order of operations",
+      "skills": [
+        "OA-01"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "25",
+        "35",
+        "33",
+        "29"
+      ]
+    },
+    {
+      "id": "Q098",
+      "source_id": "Q098",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is 5 x (3 + 4) - 2?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "33",
+      "explanation": "3+4=7, 5x7=35, 35-2=33",
+      "difficulty": "Hard",
+      "topic": "Algebraic Thinking",
+      "cognitive_domain": "Order of operations",
+      "skills": [
+        "OA-01"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "37",
+        "39",
+        "29",
+        "33"
+      ]
+    },
+    {
+      "id": "Q099",
+      "source_id": "Q099",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What comes next in the pattern: 2, 4, 6, 8, ___?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "10",
+      "explanation": "Pattern adds 2 each time, so next term is 10",
+      "difficulty": "Easy",
+      "topic": "Algebraic Thinking",
+      "cognitive_domain": "Numerical patterns",
+      "skills": [
+        "OA-02"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "13",
+        "11",
+        "10",
+        "9"
+      ]
+    },
+    {
+      "id": "Q100",
+      "source_id": "Q100",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What comes next in the pattern: 3, 6, 9, 12, ___?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "15",
+      "explanation": "Pattern adds 3 each time, so next term is 15",
+      "difficulty": "Easy",
+      "topic": "Algebraic Thinking",
+      "cognitive_domain": "Numerical patterns",
+      "skills": [
+        "OA-02"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "14",
+        "16",
+        "19",
+        "15"
+      ]
+    },
+    {
+      "id": "Q101",
+      "source_id": "Q101",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What comes next in the pattern: 5, 10, 15, 20, ___?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "25",
+      "explanation": "Pattern adds 5 each time, so next term is 25",
+      "difficulty": "Easy",
+      "topic": "Algebraic Thinking",
+      "cognitive_domain": "Numerical patterns",
+      "skills": [
+        "OA-02"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "31",
+        "26",
+        "25",
+        "24"
+      ]
+    },
+    {
+      "id": "Q102",
+      "source_id": "Q102",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What comes next in the pattern: 1, 5, 9, 13, ___?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "17",
+      "explanation": "Pattern adds 4 each time, so next term is 17",
+      "difficulty": "Easy",
+      "topic": "Algebraic Thinking",
+      "cognitive_domain": "Numerical patterns",
+      "skills": [
+        "OA-02"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "18",
+        "17",
+        "22",
+        "16"
+      ]
+    },
+    {
+      "id": "Q103",
+      "source_id": "Q103",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What comes next in the pattern: 10, 20, 30, 40, ___?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "50",
+      "explanation": "Pattern adds 10 each time, so next term is 50",
+      "difficulty": "Easy",
+      "topic": "Algebraic Thinking",
+      "cognitive_domain": "Numerical patterns",
+      "skills": [
+        "OA-02"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "51",
+        "50",
+        "61",
+        "49"
+      ]
+    },
+    {
+      "id": "Q104",
+      "source_id": "Q104",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "A pattern starts at 3 and adds 5 each time. What is the 4th term?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "18",
+      "explanation": "Term 4 = 3 + 5x3 = 18",
+      "difficulty": "Medium",
+      "topic": "Algebraic Thinking",
+      "cognitive_domain": "Numerical patterns",
+      "skills": [
+        "OA-02"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "13",
+        "18",
+        "28",
+        "23"
+      ]
+    },
+    {
+      "id": "Q105",
+      "source_id": "Q105",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "A pattern starts at 2 and adds 4 each time. What is the 5th term?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "18",
+      "explanation": "Term 5 = 2 + 4x4 = 18",
+      "difficulty": "Medium",
+      "topic": "Algebraic Thinking",
+      "cognitive_domain": "Numerical patterns",
+      "skills": [
+        "OA-02"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "22",
+        "26",
+        "14",
+        "18"
+      ]
+    },
+    {
+      "id": "Q106",
+      "source_id": "Q106",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "A pattern starts at 6 and adds 3 each time. What is the 4th term?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "15",
+      "explanation": "Term 4 = 6 + 3x3 = 15",
+      "difficulty": "Medium",
+      "topic": "Algebraic Thinking",
+      "cognitive_domain": "Numerical patterns",
+      "skills": [
+        "OA-02"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "21",
+        "15",
+        "18",
+        "12"
+      ]
+    },
+    {
+      "id": "Q107",
+      "source_id": "Q107",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "A pattern starts at 1 and adds 7 each time. What is the 3th term?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "15",
+      "explanation": "Term 3 = 1 + 7x2 = 15",
+      "difficulty": "Medium",
+      "topic": "Algebraic Thinking",
+      "cognitive_domain": "Numerical patterns",
+      "skills": [
+        "OA-02"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "29",
+        "22",
+        "15",
+        "8"
+      ]
+    },
+    {
+      "id": "Q108",
+      "source_id": "Q108",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "A pattern starts at 4 and adds 6 each time. What is the 5th term?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "28",
+      "explanation": "Term 5 = 4 + 6x4 = 28",
+      "difficulty": "Medium",
+      "topic": "Algebraic Thinking",
+      "cognitive_domain": "Numerical patterns",
+      "skills": [
+        "OA-02"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "22",
+        "28",
+        "34",
+        "40"
+      ]
+    },
+    {
+      "id": "Q109",
+      "source_id": "Q109",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "Two patterns start at 0: Pattern A adds 3, Pattern B adds 6. What is Pattern B's value at its 4th term (when Pattern A's 4th term is 12)?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "24",
+      "explanation": "Pattern B's 4th term = 6x4 = 24",
+      "difficulty": "Hard",
+      "topic": "Algebraic Thinking",
+      "cognitive_domain": "Numerical patterns",
+      "skills": [
+        "OA-02"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "36",
+        "30",
+        "18",
+        "24"
+      ]
+    },
+    {
+      "id": "Q110",
+      "source_id": "Q110",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "Two patterns start at 0: Pattern A adds 2, Pattern B adds 5. What is Pattern B's value at its 5th term (when Pattern A's 5th term is 10)?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "25",
+      "explanation": "Pattern B's 5th term = 5x5 = 25",
+      "difficulty": "Hard",
+      "topic": "Algebraic Thinking",
+      "cognitive_domain": "Numerical patterns",
+      "skills": [
+        "OA-02"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "30",
+        "35",
+        "25",
+        "20"
+      ]
+    },
+    {
+      "id": "Q111",
+      "source_id": "Q111",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "Two patterns start at 0: Pattern A adds 4, Pattern B adds 8. What is Pattern B's value at its 3th term (when Pattern A's 3th term is 12)?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "24",
+      "explanation": "Pattern B's 3th term = 8x3 = 24",
+      "difficulty": "Hard",
+      "topic": "Algebraic Thinking",
+      "cognitive_domain": "Numerical patterns",
+      "skills": [
+        "OA-02"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "36",
+        "32",
+        "24",
+        "16"
+      ]
+    },
+    {
+      "id": "Q112",
+      "source_id": "Q112",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "Two patterns start at 0: Pattern A adds 1, Pattern B adds 3. What is Pattern B's value at its 6th term (when Pattern A's 6th term is 6)?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "18",
+      "explanation": "Pattern B's 6th term = 3x6 = 18",
+      "difficulty": "Hard",
+      "topic": "Algebraic Thinking",
+      "cognitive_domain": "Numerical patterns",
+      "skills": [
+        "OA-02"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "18",
+        "24",
+        "15",
+        "21"
+      ]
+    },
+    {
+      "id": "Q113",
+      "source_id": "Q113",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "Which expression means 'five more than a number x'?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "x + 5",
+      "explanation": "'five more than a number x' translates to x + 5",
+      "difficulty": "Easy",
+      "topic": "Algebraic Thinking",
+      "cognitive_domain": "Writing expressions",
+      "skills": [
+        "OA-03"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "3 / k",
+        "n + 4",
+        "3 - m",
+        "x + 5"
+      ]
+    },
+    {
+      "id": "Q114",
+      "source_id": "Q114",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "Which expression means 'seven less than a number y'?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "y - 7",
+      "explanation": "'seven less than a number y' translates to y - 7",
+      "difficulty": "Easy",
+      "topic": "Algebraic Thinking",
+      "cognitive_domain": "Writing expressions",
+      "skills": [
+        "OA-03"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "5x",
+        "3 / k",
+        "3 - m",
+        "y - 7"
+      ]
+    },
+    {
+      "id": "Q115",
+      "source_id": "Q115",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "Which expression means 'four times a number n'?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "4n",
+      "explanation": "'four times a number n' translates to 4n",
+      "difficulty": "Easy",
+      "topic": "Algebraic Thinking",
+      "cognitive_domain": "Writing expressions",
+      "skills": [
+        "OA-03"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "x - 5",
+        "4n",
+        "n + 4",
+        "5x"
+      ]
+    },
+    {
+      "id": "Q116",
+      "source_id": "Q116",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "Which expression means 'a number k divided by 3'?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "k / 3",
+      "explanation": "'a number k divided by 3' translates to k / 3",
+      "difficulty": "Easy",
+      "topic": "Algebraic Thinking",
+      "cognitive_domain": "Writing expressions",
+      "skills": [
+        "OA-03"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "m - 3",
+        "x + 7",
+        "7 - y",
+        "k / 3"
+      ]
+    },
+    {
+      "id": "Q117",
+      "source_id": "Q117",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "Which expression means 'three more than a number m'?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "m + 3",
+      "explanation": "'three more than a number m' translates to m + 3",
+      "difficulty": "Easy",
+      "topic": "Algebraic Thinking",
+      "cognitive_domain": "Writing expressions",
+      "skills": [
+        "OA-03"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "5x",
+        "x + 7",
+        "m + 3",
+        "k x 3"
+      ]
+    },
+    {
+      "id": "Q118",
+      "source_id": "Q118",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "Which expression matches: 'three times a number, then add 7'?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "3x + 7",
+      "explanation": "Multiply/divide first per wording, then apply the second operation: 3x + 7",
+      "difficulty": "Medium",
+      "topic": "Algebraic Thinking",
+      "cognitive_domain": "Writing expressions",
+      "skills": [
+        "OA-03"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "3(x+7)",
+        "3x - 7",
+        "7x + 3",
+        "3x + 7"
+      ]
+    },
+    {
+      "id": "Q119",
+      "source_id": "Q119",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "Which expression matches: 'a number doubled, then subtract 5'?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "2x - 5",
+      "explanation": "Multiply/divide first per wording, then apply the second operation: 2x - 5",
+      "difficulty": "Medium",
+      "topic": "Algebraic Thinking",
+      "cognitive_domain": "Writing expressions",
+      "skills": [
+        "OA-03"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "2x + 5",
+        "2x - 5",
+        "2(x-5)",
+        "5x - 2"
+      ]
+    },
+    {
+      "id": "Q120",
+      "source_id": "Q120",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "Which expression matches: 'five times a number, then add 2'?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "5x + 2",
+      "explanation": "Multiply/divide first per wording, then apply the second operation: 5x + 2",
+      "difficulty": "Medium",
+      "topic": "Algebraic Thinking",
+      "cognitive_domain": "Writing expressions",
+      "skills": [
+        "OA-03"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "5x - 2",
+        "2x + 5",
+        "5x + 2",
+        "5(x+2)"
+      ]
+    },
+    {
+      "id": "Q121",
+      "source_id": "Q121",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "Which expression matches: 'a number divided by 4, then add 3'?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "x/4 + 3",
+      "explanation": "Multiply/divide first per wording, then apply the second operation: x/4 + 3",
+      "difficulty": "Medium",
+      "topic": "Algebraic Thinking",
+      "cognitive_domain": "Writing expressions",
+      "skills": [
+        "OA-03"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "(x+3)/4",
+        "x/4 - 3",
+        "x/4 + 3",
+        "3x/4"
+      ]
+    },
+    {
+      "id": "Q122",
+      "source_id": "Q122",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "Which expression matches: 'four times a number, then subtract 6'?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "4x - 6",
+      "explanation": "Multiply/divide first per wording, then apply the second operation: 4x - 6",
+      "difficulty": "Medium",
+      "topic": "Algebraic Thinking",
+      "cognitive_domain": "Writing expressions",
+      "skills": [
+        "OA-03"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "4(x-6)",
+        "6x - 4",
+        "4x - 6",
+        "4x + 6"
+      ]
+    },
+    {
+      "id": "Q123",
+      "source_id": "Q123",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "Which expression matches: 'subtract 4 from a number, then double the result'?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "2(x - 4)",
+      "explanation": "The operation in parentheses happens first, so the expression is 2(x - 4)",
+      "difficulty": "Hard",
+      "topic": "Algebraic Thinking",
+      "cognitive_domain": "Writing expressions",
+      "skills": [
+        "OA-03"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "2x - 8",
+        "2(x - 4)",
+        "2x - 4",
+        "x - 8"
+      ]
+    },
+    {
+      "id": "Q124",
+      "source_id": "Q124",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "Which expression matches: 'add 3 to a number, then triple the result'?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "3(x + 3)",
+      "explanation": "The operation in parentheses happens first, so the expression is 3(x + 3)",
+      "difficulty": "Hard",
+      "topic": "Algebraic Thinking",
+      "cognitive_domain": "Writing expressions",
+      "skills": [
+        "OA-03"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "3x + 9",
+        "x + 9",
+        "3(x + 3)",
+        "3x + 3"
+      ]
+    },
+    {
+      "id": "Q125",
+      "source_id": "Q125",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "Which expression matches: 'subtract 2 from a number, then multiply by 5'?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "5(x - 2)",
+      "explanation": "The operation in parentheses happens first, so the expression is 5(x - 2)",
+      "difficulty": "Hard",
+      "topic": "Algebraic Thinking",
+      "cognitive_domain": "Writing expressions",
+      "skills": [
+        "OA-03"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "5(x - 2)",
+        "x - 10",
+        "5x - 2",
+        "5x - 10"
+      ]
+    },
+    {
+      "id": "Q126",
+      "source_id": "Q126",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "Which expression matches: 'add 6 to a number, then multiply by 4'?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "4(x + 6)",
+      "explanation": "The operation in parentheses happens first, so the expression is 4(x + 6)",
+      "difficulty": "Hard",
+      "topic": "Algebraic Thinking",
+      "cognitive_domain": "Writing expressions",
+      "skills": [
+        "OA-03"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "4x + 24",
+        "x + 24",
+        "4x + 6",
+        "4(x + 6)"
+      ]
+    },
+    {
+      "id": "Q127",
+      "source_id": "Q127",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is the volume of a box with length 4, width 3, height 2 (in cubic units)?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "24",
+      "explanation": "V = 4x3x2 = 24",
+      "difficulty": "Easy",
+      "topic": "Measurement & Data",
+      "cognitive_domain": "Volume of rectangular prisms",
+      "skills": [
+        "MD-01"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "24",
+        "28",
+        "20",
+        "30"
+      ]
+    },
+    {
+      "id": "Q128",
+      "source_id": "Q128",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is the volume of a box with length 5, width 2, height 3 (in cubic units)?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "30",
+      "explanation": "V = 5x2x3 = 30",
+      "difficulty": "Easy",
+      "topic": "Measurement & Data",
+      "cognitive_domain": "Volume of rectangular prisms",
+      "skills": [
+        "MD-01"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "26",
+        "34",
+        "36",
+        "30"
+      ]
+    },
+    {
+      "id": "Q129",
+      "source_id": "Q129",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is the volume of a box with length 6, width 4, height 2 (in cubic units)?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "48",
+      "explanation": "V = 6x4x2 = 48",
+      "difficulty": "Easy",
+      "topic": "Measurement & Data",
+      "cognitive_domain": "Volume of rectangular prisms",
+      "skills": [
+        "MD-01"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "48",
+        "54",
+        "44",
+        "52"
+      ]
+    },
+    {
+      "id": "Q130",
+      "source_id": "Q130",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is the volume of a box with length 3, width 3, height 3 (in cubic units)?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "27",
+      "explanation": "V = 3x3x3 = 27",
+      "difficulty": "Easy",
+      "topic": "Measurement & Data",
+      "cognitive_domain": "Volume of rectangular prisms",
+      "skills": [
+        "MD-01"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "23",
+        "31",
+        "33",
+        "27"
+      ]
+    },
+    {
+      "id": "Q131",
+      "source_id": "Q131",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What is the volume of a box with length 5, width 4, height 2 (in cubic units)?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "40",
+      "explanation": "V = 5x4x2 = 40",
+      "difficulty": "Easy",
+      "topic": "Measurement & Data",
+      "cognitive_domain": "Volume of rectangular prisms",
+      "skills": [
+        "MD-01"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "40",
+        "44",
+        "46",
+        "36"
+      ]
+    },
+    {
+      "id": "Q132",
+      "source_id": "Q132",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "A fish tank is 10 in long, 5 in wide, and 8 in tall. What is its volume?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "400 cubic in",
+      "explanation": "V = 10x5x8 = 400 cubic in",
+      "difficulty": "Medium",
+      "topic": "Measurement & Data",
+      "cognitive_domain": "Volume of rectangular prisms",
+      "skills": [
+        "MD-01"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "420 cubic in",
+        "400 cubic in",
+        "380 cubic in",
+        "430 cubic in"
+      ]
+    },
+    {
+      "id": "Q133",
+      "source_id": "Q133",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "A storage box is 12 cm long, 6 cm wide, and 4 cm tall. What is its volume?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "288 cubic cm",
+      "explanation": "V = 12x6x4 = 288 cubic cm",
+      "difficulty": "Medium",
+      "topic": "Measurement & Data",
+      "cognitive_domain": "Volume of rectangular prisms",
+      "skills": [
+        "MD-01"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "308 cubic cm",
+        "288 cubic cm",
+        "268 cubic cm",
+        "318 cubic cm"
+      ]
+    },
+    {
+      "id": "Q134",
+      "source_id": "Q134",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "A sandbox is 8 ft long, 5 ft wide, and 10 ft tall. What is its volume?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "400 cubic ft",
+      "explanation": "V = 8x5x10 = 400 cubic ft",
+      "difficulty": "Medium",
+      "topic": "Measurement & Data",
+      "cognitive_domain": "Volume of rectangular prisms",
+      "skills": [
+        "MD-01"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "430 cubic ft",
+        "420 cubic ft",
+        "400 cubic ft",
+        "380 cubic ft"
+      ]
+    },
+    {
+      "id": "Q135",
+      "source_id": "Q135",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "A toy chest is 15 in long, 4 in wide, and 6 in tall. What is its volume?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "360 cubic in",
+      "explanation": "V = 15x4x6 = 360 cubic in",
+      "difficulty": "Medium",
+      "topic": "Measurement & Data",
+      "cognitive_domain": "Volume of rectangular prisms",
+      "skills": [
+        "MD-01"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "380 cubic in",
+        "390 cubic in",
+        "340 cubic in",
+        "360 cubic in"
+      ]
+    },
+    {
+      "id": "Q136",
+      "source_id": "Q136",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "A jewelry box is 9 cm long, 6 cm wide, and 5 cm tall. What is its volume?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "270 cubic cm",
+      "explanation": "V = 9x6x5 = 270 cubic cm",
+      "difficulty": "Medium",
+      "topic": "Measurement & Data",
+      "cognitive_domain": "Volume of rectangular prisms",
+      "skills": [
+        "MD-01"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "300 cubic cm",
+        "270 cubic cm",
+        "290 cubic cm",
+        "250 cubic cm"
+      ]
+    },
+    {
+      "id": "Q137",
+      "source_id": "Q137",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "A box has volume 240 cubic cm. Its length is 8 cm and width is 5 cm. What is its height?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "6 cm",
+      "explanation": "Height = 240 / (8x5) = 240/40 = 6",
+      "difficulty": "Hard",
+      "topic": "Measurement & Data",
+      "cognitive_domain": "Volume of rectangular prisms",
+      "skills": [
+        "MD-01"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "6 cm",
+        "7 cm",
+        "8 cm",
+        "5 cm"
+      ]
+    },
+    {
+      "id": "Q138",
+      "source_id": "Q138",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "A box has volume 180 cubic cm. Its length is 6 cm and width is 5 cm. What is its height?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "6 cm",
+      "explanation": "Height = 180 / (6x5) = 180/30 = 6",
+      "difficulty": "Hard",
+      "topic": "Measurement & Data",
+      "cognitive_domain": "Volume of rectangular prisms",
+      "skills": [
+        "MD-01"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "8 cm",
+        "7 cm",
+        "5 cm",
+        "6 cm"
+      ]
+    },
+    {
+      "id": "Q139",
+      "source_id": "Q139",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "A box has volume 320 cubic cm. Its length is 8 cm and width is 8 cm. What is its height?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "5 cm",
+      "explanation": "Height = 320 / (8x8) = 320/64 = 5",
+      "difficulty": "Hard",
+      "topic": "Measurement & Data",
+      "cognitive_domain": "Volume of rectangular prisms",
+      "skills": [
+        "MD-01"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "5 cm",
+        "6 cm",
+        "7 cm",
+        "4 cm"
+      ]
+    },
+    {
+      "id": "Q140",
+      "source_id": "Q140",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "A box has volume 150 cubic cm. Its length is 5 cm and width is 6 cm. What is its height?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "5 cm",
+      "explanation": "Height = 150 / (5x6) = 150/30 = 5",
+      "difficulty": "Hard",
+      "topic": "Measurement & Data",
+      "cognitive_domain": "Volume of rectangular prisms",
+      "skills": [
+        "MD-01"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "5 cm",
+        "7 cm",
+        "6 cm",
+        "4 cm"
+      ]
+    },
+    {
+      "id": "Q141",
+      "source_id": "Q141",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "How many cm are in 3 m?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "300",
+      "explanation": "1 m = 100 cm, so 3 m = 300 cm",
+      "difficulty": "Easy",
+      "topic": "Measurement & Data",
+      "cognitive_domain": "Unit conversion",
+      "skills": [
+        "MD-02"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "290",
+        "320",
+        "300",
+        "310"
+      ]
+    },
+    {
+      "id": "Q142",
+      "source_id": "Q142",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "How many cm are in 5 m?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "500",
+      "explanation": "1 m = 100 cm, so 5 m = 500 cm",
+      "difficulty": "Easy",
+      "topic": "Measurement & Data",
+      "cognitive_domain": "Unit conversion",
+      "skills": [
+        "MD-02"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "510",
+        "500",
+        "490",
+        "520"
+      ]
+    },
+    {
+      "id": "Q143",
+      "source_id": "Q143",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "How many m are in 2 km?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "2000",
+      "explanation": "1 km = 1000 m, so 2 km = 2000 m",
+      "difficulty": "Easy",
+      "topic": "Measurement & Data",
+      "cognitive_domain": "Unit conversion",
+      "skills": [
+        "MD-02"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "2200",
+        "2000",
+        "2100",
+        "1900"
+      ]
+    },
+    {
+      "id": "Q144",
+      "source_id": "Q144",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "How many mL are in 4 L?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "4000",
+      "explanation": "1 L = 1000 mL, so 4 L = 4000 mL",
+      "difficulty": "Easy",
+      "topic": "Measurement & Data",
+      "cognitive_domain": "Unit conversion",
+      "skills": [
+        "MD-02"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "4200",
+        "4000",
+        "4100",
+        "3900"
+      ]
+    },
+    {
+      "id": "Q145",
+      "source_id": "Q145",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "How many g are in 6 kg?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "6000",
+      "explanation": "1 kg = 1000 g, so 6 kg = 6000 g",
+      "difficulty": "Easy",
+      "topic": "Measurement & Data",
+      "cognitive_domain": "Unit conversion",
+      "skills": [
+        "MD-02"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "6000",
+        "6100",
+        "5900",
+        "6200"
+      ]
+    },
+    {
+      "id": "Q146",
+      "source_id": "Q146",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "How many g are in 2.5 kg?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "2500",
+      "explanation": "1 kg = 1000 g, so 2.5 kg = 2500 g",
+      "difficulty": "Medium",
+      "topic": "Measurement & Data",
+      "cognitive_domain": "Unit conversion",
+      "skills": [
+        "MD-02"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "2500",
+        "2450",
+        "2550",
+        "2600"
+      ]
+    },
+    {
+      "id": "Q147",
+      "source_id": "Q147",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "How many mL are in 1.5 L?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "1500",
+      "explanation": "1 L = 1000 mL, so 1.5 L = 1500 mL",
+      "difficulty": "Medium",
+      "topic": "Measurement & Data",
+      "cognitive_domain": "Unit conversion",
+      "skills": [
+        "MD-02"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "1500",
+        "1600",
+        "1450",
+        "1550"
+      ]
+    },
+    {
+      "id": "Q148",
+      "source_id": "Q148",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "How many cm are in 3.2 m?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "320",
+      "explanation": "1 m = 100 cm, so 3.2 m = 320 cm",
+      "difficulty": "Medium",
+      "topic": "Measurement & Data",
+      "cognitive_domain": "Unit conversion",
+      "skills": [
+        "MD-02"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "420",
+        "320",
+        "270",
+        "370"
+      ]
+    },
+    {
+      "id": "Q149",
+      "source_id": "Q149",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "How many m are in 0.75 km?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "750",
+      "explanation": "1 km = 1000 m, so 0.75 km = 750 m",
+      "difficulty": "Medium",
+      "topic": "Measurement & Data",
+      "cognitive_domain": "Unit conversion",
+      "skills": [
+        "MD-02"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "750",
+        "800",
+        "850",
+        "700"
+      ]
+    },
+    {
+      "id": "Q150",
+      "source_id": "Q150",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "How many g are in 4.2 kg?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "4200",
+      "explanation": "1 kg = 1000 g, so 4.2 kg = 4200 g",
+      "difficulty": "Medium",
+      "topic": "Measurement & Data",
+      "cognitive_domain": "Unit conversion",
+      "skills": [
+        "MD-02"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "4150",
+        "4250",
+        "4300",
+        "4200"
+      ]
+    },
+    {
+      "id": "Q151",
+      "source_id": "Q151",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "A recipe needs 1500 mL of milk. How many L is that?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "1.5 L",
+      "explanation": "1000 mL = 1 L, so 1500 mL = 1.5 L",
+      "difficulty": "Hard",
+      "topic": "Measurement & Data",
+      "cognitive_domain": "Unit conversion",
+      "skills": [
+        "MD-02"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "2.5 L",
+        "1.2 L",
+        "1.5 L",
+        "2.0 L"
+      ]
+    },
+    {
+      "id": "Q152",
+      "source_id": "Q152",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "A bag of rice weighs 2500 g. How many kg is that?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "2.5 kg",
+      "explanation": "1000 g = 1 kg, so 2500 g = 2.5 kg",
+      "difficulty": "Hard",
+      "topic": "Measurement & Data",
+      "cognitive_domain": "Unit conversion",
+      "skills": [
+        "MD-02"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "3.0 kg",
+        "2.2 kg",
+        "3.5 kg",
+        "2.5 kg"
+      ]
+    },
+    {
+      "id": "Q153",
+      "source_id": "Q153",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "A runner covers 3200 m. How many km is that?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "3.2 km",
+      "explanation": "1000 m = 1 km, so 3200 m = 3.2 km",
+      "difficulty": "Hard",
+      "topic": "Measurement & Data",
+      "cognitive_domain": "Unit conversion",
+      "skills": [
+        "MD-02"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "3.7 km",
+        "3.2 km",
+        "2.9 km",
+        "4.2 km"
+      ]
+    },
+    {
+      "id": "Q154",
+      "source_id": "Q154",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "A bottle holds 4500 mL of juice. How many L is that?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "4.5 L",
+      "explanation": "1000 mL = 1 L, so 4500 mL = 4.5 L",
+      "difficulty": "Hard",
+      "topic": "Measurement & Data",
+      "cognitive_domain": "Unit conversion",
+      "skills": [
+        "MD-02"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "4.2 L",
+        "4.5 L",
+        "5.0 L",
+        "5.5 L"
+      ]
+    },
+    {
+      "id": "Q155",
+      "source_id": "Q155",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "A line plot shows 3 items at 1/2 inch each. What is the total length of these items?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "3/2 in",
+      "explanation": "3 x 1/2 = 3/2 inches",
+      "difficulty": "Easy",
+      "topic": "Measurement & Data",
+      "cognitive_domain": "Line plots with fractions",
+      "skills": [
+        "MD-03"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "3/2 in",
+        "5/4 in",
+        "7/4 in",
+        "2 in"
+      ]
+    },
+    {
+      "id": "Q156",
+      "source_id": "Q156",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "A line plot shows 4 items at 1/4 inch each. What is the total length of these items?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "1 in",
+      "explanation": "4 x 1/4 = 1 inches",
+      "difficulty": "Easy",
+      "topic": "Measurement & Data",
+      "cognitive_domain": "Line plots with fractions",
+      "skills": [
+        "MD-03"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "3/2 in",
+        "3/4 in",
+        "1 in",
+        "5/4 in"
+      ]
+    },
+    {
+      "id": "Q157",
+      "source_id": "Q157",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "A line plot shows 5 items at 1/2 inch each. What is the total length of these items?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "5/2 in",
+      "explanation": "5 x 1/2 = 5/2 inches",
+      "difficulty": "Easy",
+      "topic": "Measurement & Data",
+      "cognitive_domain": "Line plots with fractions",
+      "skills": [
+        "MD-03"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "9/4 in",
+        "3 in",
+        "11/4 in",
+        "5/2 in"
+      ]
+    },
+    {
+      "id": "Q158",
+      "source_id": "Q158",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "A line plot shows 6 items at 1/4 inch each. What is the total length of these items?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "3/2 in",
+      "explanation": "6 x 1/4 = 3/2 inches",
+      "difficulty": "Easy",
+      "topic": "Measurement & Data",
+      "cognitive_domain": "Line plots with fractions",
+      "skills": [
+        "MD-03"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "3/2 in",
+        "2 in",
+        "5/4 in",
+        "7/4 in"
+      ]
+    },
+    {
+      "id": "Q159",
+      "source_id": "Q159",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "A line plot shows 2 items at 3/4 inch each. What is the total length of these items?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "3/2 in",
+      "explanation": "2 x 3/4 = 3/2 inches",
+      "difficulty": "Easy",
+      "topic": "Measurement & Data",
+      "cognitive_domain": "Line plots with fractions",
+      "skills": [
+        "MD-03"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "7/4 in",
+        "2 in",
+        "5/4 in",
+        "3/2 in"
+      ]
+    },
+    {
+      "id": "Q160",
+      "source_id": "Q160",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "A line plot shows: 2 items at 1/4 in, 3 items at 1/2 in. What is the combined length?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "2 in",
+      "explanation": "2x1/4=1/2, 3x1/2=3/2, total=2",
+      "difficulty": "Medium",
+      "topic": "Measurement & Data",
+      "cognitive_domain": "Line plots with fractions",
+      "skills": [
+        "MD-03"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "7/4 in",
+        "5/2 in",
+        "9/4 in",
+        "2 in"
+      ]
+    },
+    {
+      "id": "Q161",
+      "source_id": "Q161",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "A line plot shows: 3 items at 1/4 in, 2 items at 1/2 in. What is the combined length?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "7/4 in",
+      "explanation": "3x1/4=3/4, 2x1/2=1, total=7/4",
+      "difficulty": "Medium",
+      "topic": "Measurement & Data",
+      "cognitive_domain": "Line plots with fractions",
+      "skills": [
+        "MD-03"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "7/4 in",
+        "2 in",
+        "3/2 in",
+        "9/4 in"
+      ]
+    },
+    {
+      "id": "Q162",
+      "source_id": "Q162",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "A line plot shows: 4 items at 1/2 in, 2 items at 1/4 in. What is the combined length?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "5/2 in",
+      "explanation": "4x1/2=2, 2x1/4=1/2, total=5/2",
+      "difficulty": "Medium",
+      "topic": "Measurement & Data",
+      "cognitive_domain": "Line plots with fractions",
+      "skills": [
+        "MD-03"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "5/2 in",
+        "11/4 in",
+        "9/4 in",
+        "3 in"
+      ]
+    },
+    {
+      "id": "Q163",
+      "source_id": "Q163",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "A line plot shows: 2 items at 3/4 in, 3 items at 1/4 in. What is the combined length?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "9/4 in",
+      "explanation": "2x3/4=3/2, 3x1/4=3/4, total=9/4",
+      "difficulty": "Medium",
+      "topic": "Measurement & Data",
+      "cognitive_domain": "Line plots with fractions",
+      "skills": [
+        "MD-03"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "2 in",
+        "5/2 in",
+        "9/4 in",
+        "11/4 in"
+      ]
+    },
+    {
+      "id": "Q164",
+      "source_id": "Q164",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "A line plot shows: 3 items at 1/3 in, 3 items at 1/6 in. What is the combined length?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "3/2 in",
+      "explanation": "3x1/3=1, 3x1/6=1/2, total=3/2",
+      "difficulty": "Medium",
+      "topic": "Measurement & Data",
+      "cognitive_domain": "Line plots with fractions",
+      "skills": [
+        "MD-03"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "5/4 in",
+        "3/2 in",
+        "7/4 in",
+        "2 in"
+      ]
+    },
+    {
+      "id": "Q165",
+      "source_id": "Q165",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "A line plot has 4 items at 3/4 in each. What is the total length?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "3 in",
+      "explanation": "4 x 3/4 = 3 inches",
+      "difficulty": "Hard",
+      "topic": "Measurement & Data",
+      "cognitive_domain": "Line plots with fractions",
+      "skills": [
+        "MD-03"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "3 in",
+        "7/2 in",
+        "13/4 in",
+        "11/4 in"
+      ]
+    },
+    {
+      "id": "Q166",
+      "source_id": "Q166",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "A line plot has 3 items at 2/3 in each. What is the total length?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "2 in",
+      "explanation": "3 x 2/3 = 2 inches",
+      "difficulty": "Hard",
+      "topic": "Measurement & Data",
+      "cognitive_domain": "Line plots with fractions",
+      "skills": [
+        "MD-03"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "2 in",
+        "7/4 in",
+        "9/4 in",
+        "5/2 in"
+      ]
+    },
+    {
+      "id": "Q167",
+      "source_id": "Q167",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "A line plot has 5 items at 2/5 in each. What is the total length?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "2 in",
+      "explanation": "5 x 2/5 = 2 inches",
+      "difficulty": "Hard",
+      "topic": "Measurement & Data",
+      "cognitive_domain": "Line plots with fractions",
+      "skills": [
+        "MD-03"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "9/4 in",
+        "5/2 in",
+        "7/4 in",
+        "2 in"
+      ]
+    },
+    {
+      "id": "Q168",
+      "source_id": "Q168",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "A line plot has 6 items at 1/3 in each. What is the total length?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "2 in",
+      "explanation": "6 x 1/3 = 2 inches",
+      "difficulty": "Hard",
+      "topic": "Measurement & Data",
+      "cognitive_domain": "Line plots with fractions",
+      "skills": [
+        "MD-03"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "2 in",
+        "7/4 in",
+        "9/4 in",
+        "5/2 in"
+      ]
+    },
+    {
+      "id": "Q169",
+      "source_id": "Q169",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What are the coordinates of a point 3 units right and 2 units up from the origin?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "(3,2)",
+      "explanation": "x = 3 (right), y = 2 (up), so the point is (3,2)",
+      "difficulty": "Easy",
+      "topic": "Geometry",
+      "cognitive_domain": "Coordinate plane",
+      "skills": [
+        "G-01"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "(2,3)",
+        "(3,2)",
+        "(0,2)",
+        "(3,0)"
+      ]
+    },
+    {
+      "id": "Q170",
+      "source_id": "Q170",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What are the coordinates of a point 5 units right and 4 units up from the origin?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "(5,4)",
+      "explanation": "x = 5 (right), y = 4 (up), so the point is (5,4)",
+      "difficulty": "Easy",
+      "topic": "Geometry",
+      "cognitive_domain": "Coordinate plane",
+      "skills": [
+        "G-01"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "(0,4)",
+        "(5,0)",
+        "(5,4)",
+        "(4,5)"
+      ]
+    },
+    {
+      "id": "Q171",
+      "source_id": "Q171",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What are the coordinates of a point 2 units right and 6 units up from the origin?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "(2,6)",
+      "explanation": "x = 2 (right), y = 6 (up), so the point is (2,6)",
+      "difficulty": "Easy",
+      "topic": "Geometry",
+      "cognitive_domain": "Coordinate plane",
+      "skills": [
+        "G-01"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "(6,2)",
+        "(2,6)",
+        "(2,0)",
+        "(0,6)"
+      ]
+    },
+    {
+      "id": "Q172",
+      "source_id": "Q172",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What are the coordinates of a point 7 units right and 1 units up from the origin?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "(7,1)",
+      "explanation": "x = 7 (right), y = 1 (up), so the point is (7,1)",
+      "difficulty": "Easy",
+      "topic": "Geometry",
+      "cognitive_domain": "Coordinate plane",
+      "skills": [
+        "G-01"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "(7,0)",
+        "(0,1)",
+        "(7,1)",
+        "(1,7)"
+      ]
+    },
+    {
+      "id": "Q173",
+      "source_id": "Q173",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "What are the coordinates of a point 4 units right and 4 units up from the origin?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "(4,4)",
+      "explanation": "x = 4 (right), y = 4 (up), so the point is (4,4)",
+      "difficulty": "Easy",
+      "topic": "Geometry",
+      "cognitive_domain": "Coordinate plane",
+      "skills": [
+        "G-01"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "(4,4)",
+        "(0,4)",
+        "(4,0)",
+        "(5,4)"
+      ]
+    },
+    {
+      "id": "Q174",
+      "source_id": "Q174",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "A point starts at (2,1) and moves 4 units right and 3 units up. What is its new location?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "(6,4)",
+      "explanation": "x: 2+4=6, y: 1+3=4",
+      "difficulty": "Medium",
+      "topic": "Geometry",
+      "cognitive_domain": "Coordinate plane",
+      "skills": [
+        "G-01"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "(5,4)",
+        "(6,3)",
+        "(6,4)",
+        "(4,6)"
+      ]
+    },
+    {
+      "id": "Q175",
+      "source_id": "Q175",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "A point starts at (1,2) and moves 3 units right and 4 units up. What is its new location?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "(4,6)",
+      "explanation": "x: 1+3=4, y: 2+4=6",
+      "difficulty": "Medium",
+      "topic": "Geometry",
+      "cognitive_domain": "Coordinate plane",
+      "skills": [
+        "G-01"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "(4,5)",
+        "(4,6)",
+        "(3,6)",
+        "(6,4)"
+      ]
+    },
+    {
+      "id": "Q176",
+      "source_id": "Q176",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "A point starts at (3,3) and moves 2 units right and 2 units up. What is its new location?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "(5,5)",
+      "explanation": "x: 3+2=5, y: 3+2=5",
+      "difficulty": "Medium",
+      "topic": "Geometry",
+      "cognitive_domain": "Coordinate plane",
+      "skills": [
+        "G-01"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "(5,4)",
+        "(5,5)",
+        "(4,5)",
+        "(6,5)"
+      ]
+    },
+    {
+      "id": "Q177",
+      "source_id": "Q177",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "A point starts at (4,1) and moves 1 units right and 5 units up. What is its new location?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "(5,6)",
+      "explanation": "x: 4+1=5, y: 1+5=6",
+      "difficulty": "Medium",
+      "topic": "Geometry",
+      "cognitive_domain": "Coordinate plane",
+      "skills": [
+        "G-01"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "(5,6)",
+        "(6,5)",
+        "(4,6)",
+        "(5,5)"
+      ]
+    },
+    {
+      "id": "Q178",
+      "source_id": "Q178",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "A point starts at (2,2) and moves 5 units right and 3 units up. What is its new location?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "(7,5)",
+      "explanation": "x: 2+5=7, y: 2+3=5",
+      "difficulty": "Medium",
+      "topic": "Geometry",
+      "cognitive_domain": "Coordinate plane",
+      "skills": [
+        "G-01"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "(6,5)",
+        "(7,5)",
+        "(7,4)",
+        "(5,7)"
+      ]
+    },
+    {
+      "id": "Q179",
+      "source_id": "Q179",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "Points A(1, 1), B(1, 4), C(5, 4) form three corners of a rectangle, with the right angle at B. What point completes the rectangle as point D?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "(5,1)",
+      "explanation": "D must share C's x-coordinate (5) and A's y-coordinate (1): (5,1)",
+      "difficulty": "Hard",
+      "topic": "Geometry",
+      "cognitive_domain": "Coordinate plane",
+      "skills": [
+        "G-01"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "(5,2)",
+        "(4,1)",
+        "(5,1)",
+        "(5,5)"
+      ]
+    },
+    {
+      "id": "Q180",
+      "source_id": "Q180",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "Points A(2, 1), B(2, 5), C(6, 5) form three corners of a rectangle, with the right angle at B. What point completes the rectangle as point D?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "(6,1)",
+      "explanation": "D must share C's x-coordinate (6) and A's y-coordinate (1): (6,1)",
+      "difficulty": "Hard",
+      "topic": "Geometry",
+      "cognitive_domain": "Coordinate plane",
+      "skills": [
+        "G-01"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "(6,2)",
+        "(6,1)",
+        "(5,1)",
+        "(6,6)"
+      ]
+    },
+    {
+      "id": "Q181",
+      "source_id": "Q181",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "Points A(0, 2), B(0, 6), C(4, 6) form three corners of a rectangle, with the right angle at B. What point completes the rectangle as point D?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "(4,2)",
+      "explanation": "D must share C's x-coordinate (4) and A's y-coordinate (2): (4,2)",
+      "difficulty": "Hard",
+      "topic": "Geometry",
+      "cognitive_domain": "Coordinate plane",
+      "skills": [
+        "G-01"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "(4,2)",
+        "(4,3)",
+        "(3,2)",
+        "(4,7)"
+      ]
+    },
+    {
+      "id": "Q182",
+      "source_id": "Q182",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "Points A(3, 1), B(3, 4), C(7, 4) form three corners of a rectangle, with the right angle at B. What point completes the rectangle as point D?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "(7,1)",
+      "explanation": "D must share C's x-coordinate (7) and A's y-coordinate (1): (7,1)",
+      "difficulty": "Hard",
+      "topic": "Geometry",
+      "cognitive_domain": "Coordinate plane",
+      "skills": [
+        "G-01"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "(7,2)",
+        "(7,1)",
+        "(7,5)",
+        "(6,1)"
+      ]
+    },
+    {
+      "id": "Q183",
+      "source_id": "Q183",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "Which shape has exactly 3 sides?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "Triangle",
+      "explanation": "A triangle has 3 sides",
+      "difficulty": "Easy",
+      "topic": "Geometry",
+      "cognitive_domain": "Classifying 2D shapes",
+      "skills": [
+        "G-02"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "Quadrilateral",
+        "Square",
+        "Pentagon",
+        "Triangle"
+      ]
+    },
+    {
+      "id": "Q184",
+      "source_id": "Q184",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "Which shape has exactly 4 sides?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "Square",
+      "explanation": "A square has 4 sides",
+      "difficulty": "Easy",
+      "topic": "Geometry",
+      "cognitive_domain": "Classifying 2D shapes",
+      "skills": [
+        "G-02"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "Triangle",
+        "Quadrilateral",
+        "Pentagon",
+        "Square"
+      ]
+    },
+    {
+      "id": "Q185",
+      "source_id": "Q185",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "Which shape has exactly 5 sides?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "Pentagon",
+      "explanation": "A pentagon has 5 sides",
+      "difficulty": "Easy",
+      "topic": "Geometry",
+      "cognitive_domain": "Classifying 2D shapes",
+      "skills": [
+        "G-02"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "Pentagon",
+        "Square",
+        "Hexagon",
+        "Triangle"
+      ]
+    },
+    {
+      "id": "Q186",
+      "source_id": "Q186",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "Which shape has exactly 6 sides?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "Hexagon",
+      "explanation": "A hexagon has 6 sides",
+      "difficulty": "Easy",
+      "topic": "Geometry",
+      "cognitive_domain": "Classifying 2D shapes",
+      "skills": [
+        "G-02"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "Square",
+        "Quadrilateral",
+        "Pentagon",
+        "Hexagon"
+      ]
+    },
+    {
+      "id": "Q187",
+      "source_id": "Q187",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "Which shape has exactly 4 sides?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "Quadrilateral",
+      "explanation": "A quadrilateral has 4 sides",
+      "difficulty": "Easy",
+      "topic": "Geometry",
+      "cognitive_domain": "Classifying 2D shapes",
+      "skills": [
+        "G-02"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "Triangle",
+        "Hexagon",
+        "Square",
+        "Quadrilateral"
+      ]
+    },
+    {
+      "id": "Q188",
+      "source_id": "Q188",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "Which of these is true for ALL rectangles?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "Opposite sides are equal",
+      "explanation": "Opposite sides are equal is the property true for the whole category.",
+      "difficulty": "Medium",
+      "topic": "Geometry",
+      "cognitive_domain": "Classifying 2D shapes",
+      "skills": [
+        "G-02"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "All sides are equal",
+        "It has no parallel sides",
+        "It has exactly one right angle",
+        "Opposite sides are equal"
+      ]
+    },
+    {
+      "id": "Q189",
+      "source_id": "Q189",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "Which of these is true for ALL squares?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "All sides are equal and all angles are right angles",
+      "explanation": "All sides are equal and all angles are right angles is the property true for the whole category.",
+      "difficulty": "Medium",
+      "topic": "Geometry",
+      "cognitive_domain": "Classifying 2D shapes",
+      "skills": [
+        "G-02"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "Only opposite sides are equal",
+        "Only two sides are equal",
+        "It has no right angles",
+        "All sides are equal and all angles are right angles"
+      ]
+    },
+    {
+      "id": "Q190",
+      "source_id": "Q190",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "Which of these is true for ALL parallelograms?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "Opposite sides are parallel",
+      "explanation": "Opposite sides are parallel is the property true for the whole category.",
+      "difficulty": "Medium",
+      "topic": "Geometry",
+      "cognitive_domain": "Classifying 2D shapes",
+      "skills": [
+        "G-02"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "It always has right angles",
+        "Only one pair of sides is parallel",
+        "Opposite sides are parallel",
+        "All sides are equal"
+      ]
+    },
+    {
+      "id": "Q191",
+      "source_id": "Q191",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "Which of these is true for ALL rhombi?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "All four sides are equal in length",
+      "explanation": "All four sides are equal in length is the property true for the whole category.",
+      "difficulty": "Medium",
+      "topic": "Geometry",
+      "cognitive_domain": "Classifying 2D shapes",
+      "skills": [
+        "G-02"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "All angles are right angles",
+        "It has no parallel sides",
+        "Only opposite sides are equal",
+        "All four sides are equal in length"
+      ]
+    },
+    {
+      "id": "Q192",
+      "source_id": "Q192",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "Which of these is true for ALL trapezoids?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "At least one pair of sides is parallel",
+      "explanation": "At least one pair of sides is parallel is the property true for the whole category.",
+      "difficulty": "Medium",
+      "topic": "Geometry",
+      "cognitive_domain": "Classifying 2D shapes",
+      "skills": [
+        "G-02"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "At least one pair of sides is parallel",
+        "All sides are equal",
+        "Both pairs of sides are parallel",
+        "It has four right angles"
+      ]
+    },
+    {
+      "id": "Q193",
+      "source_id": "Q193",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "Which statement correctly classifies a square?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "A square is always a rectangle and a rhombus",
+      "explanation": "This reflects the hierarchy: A square is always a rectangle and a rhombus",
+      "difficulty": "Hard",
+      "topic": "Geometry",
+      "cognitive_domain": "Classifying 2D shapes",
+      "skills": [
+        "G-02"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "A square is never a rectangle",
+        "A square has no equal sides",
+        "A square is always a rectangle and a rhombus",
+        "A square is a rectangle but never a rhombus"
+      ]
+    },
+    {
+      "id": "Q194",
+      "source_id": "Q194",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "Which statement correctly classifies a rhombus?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "Every rhombus is a parallelogram, but not every parallelogram is a rhombus",
+      "explanation": "This reflects the hierarchy: Every rhombus is a parallelogram, but not every parallelogram is a rhombus",
+      "difficulty": "Hard",
+      "topic": "Geometry",
+      "cognitive_domain": "Classifying 2D shapes",
+      "skills": [
+        "G-02"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "A rhombus can never be a square",
+        "Every rhombus is a parallelogram, but not every parallelogram is a rhombus",
+        "A rhombus has no parallel sides",
+        "Every parallelogram is a rhombus"
+      ]
+    },
+    {
+      "id": "Q195",
+      "source_id": "Q195",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "Which statement correctly classifies a rectangle?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "Every rectangle is a parallelogram, but not every parallelogram is a rectangle",
+      "explanation": "This reflects the hierarchy: Every rectangle is a parallelogram, but not every parallelogram is a rectangle",
+      "difficulty": "Hard",
+      "topic": "Geometry",
+      "cognitive_domain": "Classifying 2D shapes",
+      "skills": [
+        "G-02"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "A rectangle has no right angles",
+        "A rectangle can never be a square",
+        "Every parallelogram is a rectangle",
+        "Every rectangle is a parallelogram, but not every parallelogram is a rectangle"
+      ]
+    },
+    {
+      "id": "Q196",
+      "source_id": "Q196",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "Which statement correctly classifies quadrilaterals?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "All squares, rectangles, and rhombi are quadrilaterals, but not all quadrilaterals are squares",
+      "explanation": "This reflects the hierarchy: All squares, rectangles, and rhombi are quadrilaterals, but not all quadrilaterals are squares",
+      "difficulty": "Hard",
+      "topic": "Geometry",
+      "cognitive_domain": "Classifying 2D shapes",
+      "skills": [
+        "G-02"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "All quadrilaterals are squares",
+        "All squares, rectangles, and rhombi are quadrilaterals, but not all quadrilaterals are squares",
+        "Quadrilaterals never have parallel sides",
+        "Only rectangles are quadrilaterals"
+      ]
+    },
+    {
+      "id": "Q197",
+      "source_id": "Q197",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "How many sides does a quadrilateral have?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "4",
+      "explanation": "A quadrilateral has 4 sides",
+      "difficulty": "Easy",
+      "topic": "Geometry",
+      "cognitive_domain": "Properties of quadrilaterals",
+      "skills": [
+        "G-03"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "5",
+        "6",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "id": "Q198",
+      "source_id": "Q198",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "How many sides does a pentagon have?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "5",
+      "explanation": "A pentagon has 5 sides",
+      "difficulty": "Easy",
+      "topic": "Geometry",
+      "cognitive_domain": "Properties of quadrilaterals",
+      "skills": [
+        "G-03"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "7",
+        "6",
+        "4",
+        "5"
+      ]
+    },
+    {
+      "id": "Q199",
+      "source_id": "Q199",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "How many sides does a hexagon have?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "6",
+      "explanation": "A hexagon has 6 sides",
+      "difficulty": "Easy",
+      "topic": "Geometry",
+      "cognitive_domain": "Properties of quadrilaterals",
+      "skills": [
+        "G-03"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "7",
+        "8",
+        "5",
+        "6"
+      ]
+    },
+    {
+      "id": "Q200",
+      "source_id": "Q200",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "How many sides does a triangle have?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "3",
+      "explanation": "A triangle has 3 sides",
+      "difficulty": "Easy",
+      "topic": "Geometry",
+      "cognitive_domain": "Properties of quadrilaterals",
+      "skills": [
+        "G-03"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "3",
+        "4",
+        "5",
+        "2"
+      ]
+    },
+    {
+      "id": "Q201",
+      "source_id": "Q201",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "How many sides does a octagon have?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "8",
+      "explanation": "A octagon has 8 sides",
+      "difficulty": "Easy",
+      "topic": "Geometry",
+      "cognitive_domain": "Properties of quadrilaterals",
+      "skills": [
+        "G-03"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "10",
+        "9",
+        "8",
+        "7"
+      ]
+    },
+    {
+      "id": "Q202",
+      "source_id": "Q202",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "Which quadrilateral has exactly one pair of parallel sides?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "Trapezoid",
+      "explanation": "Trapezoid matches this description exactly.",
+      "difficulty": "Medium",
+      "topic": "Geometry",
+      "cognitive_domain": "Properties of quadrilaterals",
+      "skills": [
+        "G-03"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "Rhombus",
+        "Rectangle",
+        "Square",
+        "Trapezoid"
+      ]
+    },
+    {
+      "id": "Q203",
+      "source_id": "Q203",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "Which quadrilateral has two pairs of parallel sides but no right angles required?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "Parallelogram",
+      "explanation": "Parallelogram matches this description exactly.",
+      "difficulty": "Medium",
+      "topic": "Geometry",
+      "cognitive_domain": "Properties of quadrilaterals",
+      "skills": [
+        "G-03"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "Trapezoid",
+        "Square",
+        "Rectangle",
+        "Parallelogram"
+      ]
+    },
+    {
+      "id": "Q204",
+      "source_id": "Q204",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "Which quadrilateral has four equal sides but not necessarily right angles?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "Rhombus",
+      "explanation": "Rhombus matches this description exactly.",
+      "difficulty": "Medium",
+      "topic": "Geometry",
+      "cognitive_domain": "Properties of quadrilaterals",
+      "skills": [
+        "G-03"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "Rectangle",
+        "Rhombus",
+        "Square",
+        "Trapezoid"
+      ]
+    },
+    {
+      "id": "Q205",
+      "source_id": "Q205",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "Which quadrilateral has four right angles but not necessarily equal sides?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "Rectangle",
+      "explanation": "Rectangle matches this description exactly.",
+      "difficulty": "Medium",
+      "topic": "Geometry",
+      "cognitive_domain": "Properties of quadrilaterals",
+      "skills": [
+        "G-03"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "Trapezoid",
+        "Rhombus",
+        "Rectangle",
+        "Parallelogram (general)"
+      ]
+    },
+    {
+      "id": "Q206",
+      "source_id": "Q206",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "Which quadrilateral has four equal sides AND four right angles?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "Square",
+      "explanation": "Square matches this description exactly.",
+      "difficulty": "Medium",
+      "topic": "Geometry",
+      "cognitive_domain": "Properties of quadrilaterals",
+      "skills": [
+        "G-03"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "Square",
+        "Rectangle",
+        "Rhombus",
+        "Trapezoid"
+      ]
+    },
+    {
+      "id": "Q207",
+      "source_id": "Q207",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "A parallelogram has angles measuring x, 110\u00b0, x, 110\u00b0. What is the value of x?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "70",
+      "explanation": "Angles in a quadrilateral sum to 360: 2x + 220 = 360, so x = 70",
+      "difficulty": "Hard",
+      "topic": "Geometry",
+      "cognitive_domain": "Properties of quadrilaterals",
+      "skills": [
+        "G-03"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "90",
+        "70",
+        "80",
+        "60"
+      ]
+    },
+    {
+      "id": "Q208",
+      "source_id": "Q208",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "A parallelogram has angles measuring x, 100\u00b0, x, 100\u00b0. What is the value of x?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "80",
+      "explanation": "Angles in a quadrilateral sum to 360: 2x + 200 = 360, so x = 80",
+      "difficulty": "Hard",
+      "topic": "Geometry",
+      "cognitive_domain": "Properties of quadrilaterals",
+      "skills": [
+        "G-03"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "100",
+        "70",
+        "90",
+        "80"
+      ]
+    },
+    {
+      "id": "Q209",
+      "source_id": "Q209",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "A parallelogram has angles measuring x, 120\u00b0, x, 120\u00b0. What is the value of x?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "60",
+      "explanation": "Angles in a quadrilateral sum to 360: 2x + 240 = 360, so x = 60",
+      "difficulty": "Hard",
+      "topic": "Geometry",
+      "cognitive_domain": "Properties of quadrilaterals",
+      "skills": [
+        "G-03"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "60",
+        "50",
+        "80",
+        "70"
+      ]
+    },
+    {
+      "id": "Q210",
+      "source_id": "Q210",
+      "original_grade": "5",
+      "source": "QB GRADE 5.xlsx",
+      "problem": "A parallelogram has angles measuring x, 95\u00b0, x, 95\u00b0. What is the value of x?",
+      "solution_type": "",
+      "formula": "",
+      "correct_answer": "85",
+      "explanation": "Angles in a quadrilateral sum to 360: 2x + 190 = 360, so x = 85",
+      "difficulty": "Hard",
+      "topic": "Geometry",
+      "cognitive_domain": "Properties of quadrilaterals",
+      "skills": [
+        "G-03"
+      ],
+      "calculator_needed": false,
+      "answer_type": "MCQ",
+      "tags": [],
+      "choices": [
+        "105",
+        "95",
+        "85",
+        "75"
+      ]
+    }
+  ]
+}
