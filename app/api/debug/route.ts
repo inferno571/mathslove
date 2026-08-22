@@ -34,7 +34,7 @@ export async function GET() {
     if (error) {
       results.resend = { success: false, error };
     } else {
-      results.resend = { success: true, keyCount: data?.data?.length ?? 0 };
+      results.resend = { success: true, keyCount: Array.isArray(data) ? data.length : 0 };
     }
   } catch (e: any) {
     results.resend = { success: false, error: e.message };
