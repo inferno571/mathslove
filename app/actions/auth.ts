@@ -70,17 +70,26 @@ export async function signup(prevState: ActionState, formData: FormData): Promis
       VALUES (${user.id}, ${email}, ${code}, ${expiresAt.toISOString()})
     `;
 
-    await sendOTPEmail(email, code);
+    // Try to send OTP email - don't fail signup if email sending fails
+    let emailError: string | null = null;
+    try {
+      await sendOTPEmail(email, code);
+    } catch (emailErr: any) {
+      console.error('Failed to send OTP email during signup:', emailErr);
+      emailError = emailErr.message || 'Failed to send verification email';
+    }
 
     return {
       otpRequired: true,
       email,
-      message: 'Account created! Please verify your email with the code we sent.',
+      message: emailError 
+        ? `Account created, but we couldn't send the verification email: ${emailError}. Please use "Resend code" to try again.`
+        : 'Account created! Please verify your email with the code we sent.',
     };
     
   } catch (error: any) {
     console.error('Signup error:', error);
-    return { error: `Server error: ${error.message || String(error)}` };
+    return { error: `Signup failed: ${error.message || String(error)}` };
   }
 }
 
@@ -127,17 +136,25 @@ export async function login(prevState: ActionState, formData: FormData): Promise
     `;
 
     // Send OTP email
-    await sendOTPEmail(email, code);
+    let emailError: string | null = null;
+    try {
+      await sendOTPEmail(email, code);
+    } catch (emailErr: any) {
+      console.error('Failed to send OTP email during login:', emailErr);
+      emailError = emailErr.message || 'Failed to send verification email';
+    }
 
     return { 
       otpRequired: true, 
       email,
-      message: 'Verification code sent to your email.' 
+      message: emailError
+        ? `Couldn't send verification email: ${emailError}. Please use "Resend code" to try again.`
+        : 'Verification code sent to your email.'
     };
     
   } catch (error: any) {
     console.error('Login error:', error);
-    return { error: `Server error: ${error.message || String(error)}` };
+    return { error: `Login failed: ${error.message || String(error)}` };
   }
 }
 

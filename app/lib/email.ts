@@ -67,6 +67,6 @@ export async function sendOTPEmail(email: string, code: string) {
 
   if (error) {
     console.error('Failed to send OTP email:', error);
-    throw new Error('Failed to send verification email.');
+    throw new Error(`Email send failed: ${error.message || JSON.stringify(error)}`);
   }
 }
