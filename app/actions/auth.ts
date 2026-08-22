@@ -70,21 +70,21 @@ export async function signup(prevState: ActionState, formData: FormData): Promis
       VALUES (${user.id}, ${email}, ${code}, ${expiresAt.toISOString()})
     `;
 
-    // Try to send OTP email - don't fail signup if email sending fails
-    let emailError: string | null = null;
+    // Try to send OTP email - if it fails, rollback the user creation
     try {
       await sendOTPEmail(email, code);
     } catch (emailErr: any) {
-      console.error('Failed to send OTP email during signup:', emailErr);
-      emailError = emailErr.message || 'Failed to send verification email';
+      console.error('Failed to send OTP email during signup, rolling back user:', emailErr);
+      // Rollback: delete OTP codes and user so they can retry
+      await db.sql`DELETE FROM otp_codes WHERE user_id = ${user.id}`;
+      await db.sql`DELETE FROM users WHERE id = ${user.id}`;
+      return { error: `Could not send verification email: ${emailErr.message || 'Unknown error'}` };
     }
 
     return {
       otpRequired: true,
       email,
-      message: emailError 
-        ? `Account created, but we couldn't send the verification email: ${emailError}. Please use "Resend code" to try again.`
-        : 'Account created! Please verify your email with the code we sent.',
+      message: 'Account created! Please verify your email with the code we sent.',
     };
     
   } catch (error: any) {

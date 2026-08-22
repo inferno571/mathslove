@@ -235,6 +235,39 @@ function createLocalDbClient(): DbClient {
         return { rows: [{ id: newId }] as T[], rowCount: 1 };
       }
 
+      // ── DELETE Queries ──────────────────────────────────────────
+      // Delete OTP codes by user_id: DELETE FROM otp_codes WHERE user_id = $1
+      if (/DELETE\s+FROM\s+otp_codes\s+WHERE\s+user_id\s*=/i.test(query)) {
+        const userId = Number(values[0]);
+        const before = db.otp_codes.length;
+        db.otp_codes = db.otp_codes.filter(o => o.user_id !== userId);
+        const deleted = before - db.otp_codes.length;
+        if (deleted > 0) saveLocalDb(db);
+        return { rows: [] as T[], rowCount: deleted };
+      }
+
+      // Delete user by id: DELETE FROM users WHERE id = $1
+      if (/DELETE\s+FROM\s+users\s+WHERE\s+id\s*=/i.test(query)) {
+        const id = Number(values[0]);
+        const before = db.users.length;
+        db.users = db.users.filter(u => u.id !== id);
+        const deleted = before - db.users.length;
+        if (deleted > 0) saveLocalDb(db);
+        return { rows: [] as T[], rowCount: deleted };
+      }
+
+      // Truncate / delete all from a table: TRUNCATE TABLE x or DELETE FROM x (no WHERE)
+      if (/(?:TRUNCATE\s+(?:TABLE\s+)?|DELETE\s+FROM\s+)(\w+)\s*$/i.test(query)) {
+        const tableMatch = query.match(/(?:TRUNCATE\s+(?:TABLE\s+)?|DELETE\s+FROM\s+)(\w+)\s*$/i);
+        if (tableMatch) {
+          const table = tableMatch[1].toLowerCase();
+          if (table === 'users') { const c = db.users.length; db.users = []; saveLocalDb(db); return { rows: [] as T[], rowCount: c }; }
+          if (table === 'otp_codes') { const c = db.otp_codes.length; db.otp_codes = []; saveLocalDb(db); return { rows: [] as T[], rowCount: c }; }
+          if (table === 'test_results') { const c = db.test_results.length; db.test_results = []; saveLocalDb(db); return { rows: [] as T[], rowCount: c }; }
+        }
+        return { rows: [] as T[], rowCount: 0 };
+      }
+
       console.warn('Unhandled local SQL query:', query, values);
       return { rows: [] as T[], rowCount: 0 };
     },
