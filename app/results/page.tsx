@@ -168,8 +168,7 @@ export default function ResultsPage() {
             <div className="percentile-badge">{result.percentile}%</div>
             <h3 style={{ marginBottom: 12 }}>Performance Summary</h3>
             <p className="percentile-text">
-              You performed better than <strong>{result.percentile}%</strong> of
-              test takers. You answered <strong>{result.score}/{result.maxScore}</strong> questions correctly in <strong>{formatTime(result.totalTime)}</strong>.
+              You answered <strong>{result.score}/{result.maxScore}</strong> questions correctly in <strong>{formatTime(result.totalTime)}</strong>.
               {result.cognitiveBreakdown && result.cognitiveBreakdown.length > 0 && (
                 <> Your strongest area was <strong>
                   {result.cognitiveBreakdown.reduce((a, b) => a.percentage > b.percentage ? a : b).domain}

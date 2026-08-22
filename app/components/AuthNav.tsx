@@ -12,8 +12,8 @@ export function AuthNav() {
   if (session) {
     return (
       <div style={{ display: 'flex', gap: '16px', alignItems: 'center' }}>
-        <Link href="/results" style={{ color: 'white', textDecoration: 'none', fontSize: '0.9rem', fontWeight: 500 }}>
-          Results
+        <Link href="/dashboard" style={{ color: 'white', textDecoration: 'none', fontSize: '0.9rem', fontWeight: 500 }}>
+          Dashboard
         </Link>
         <form action={action}>
           <button type="submit" style={{ background: 'rgba(255,255,255,0.2)', color: 'white', border: 'none', padding: '6px 12px', borderRadius: '6px', cursor: 'pointer', fontSize: '0.9rem', fontWeight: 500 }}>
