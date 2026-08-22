@@ -24,7 +24,8 @@ export async function sendOTPEmail(email: string, code: string) {
               <table width="480" cellpadding="0" cellspacing="0" style="background:white; border-radius:16px; overflow:hidden; box-shadow: 0 4px 24px rgba(0,0,0,0.08);">
                 <!-- Header -->
                 <tr>
-                  <td style="background: linear-gradient(135deg, #1b2b5e, #2b3d7b); padding: 32px; text-align:center;">
+                  <td style="background: linear-gradient(135deg, #a20000, #7a0000); padding: 32px; text-align:center;">
+                    <img src="https://mathslove.com/logo.png" alt="MathsLove" width="48" height="48" style="display:inline-block; border-radius:9px; margin-bottom:12px;" />
                     <h1 style="color:white; margin:0; font-size:24px; font-weight:800; letter-spacing:-0.02em;">
                       Maths<span style="color:#f59e0b;">Love</span>
                     </h1>
@@ -33,13 +34,13 @@ export async function sendOTPEmail(email: string, code: string) {
                 <!-- Body -->
                 <tr>
                   <td style="padding: 40px 32px;">
-                    <h2 style="color:#1b2b5e; margin:0 0 8px; font-size:20px;">Verify your login</h2>
+                    <h2 style="color:#a20000; margin:0 0 8px; font-size:20px;">Verify your login</h2>
                     <p style="color:#64748b; margin:0 0 32px; font-size:15px; line-height:1.6;">
                       Enter the following code to complete your sign-in. This code expires in 5 minutes.
                     </p>
                     <!-- OTP Code -->
-                    <div style="background:#f1f5f9; border-radius:12px; padding:24px; text-align:center; margin-bottom:32px;">
-                      <span style="font-family:'Courier New',monospace; font-size:36px; font-weight:800; letter-spacing:8px; color:#1b2b5e;">
+                    <div style="background:#fffaf5; border-radius:12px; padding:24px; text-align:center; margin-bottom:32px; border: 1px solid #ffaa49;">
+                      <span style="font-family:'Courier New',monospace; font-size:36px; font-weight:800; letter-spacing:8px; color:#a20000;">
                         ${code}
                       </span>
                     </div>
@@ -67,6 +68,6 @@ export async function sendOTPEmail(email: string, code: string) {
 
   if (error) {
     console.error('Failed to send OTP email:', error);
-    throw new Error(`Email send failed: ${error.message || JSON.stringify(error)}`);
+    throw new Error('Failed to send verification email.');
   }
 }
