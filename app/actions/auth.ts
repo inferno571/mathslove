@@ -78,9 +78,9 @@ export async function signup(prevState: ActionState, formData: FormData): Promis
       message: 'Account created! Please verify your email with the code we sent.',
     };
     
-  } catch (error) {
+  } catch (error: any) {
     console.error('Signup error:', error);
-    return { error: 'An unexpected error occurred during signup.' };
+    return { error: `Server error: ${error.message || String(error)}` };
   }
 }
 
@@ -135,9 +135,9 @@ export async function login(prevState: ActionState, formData: FormData): Promise
       message: 'Verification code sent to your email.' 
     };
     
-  } catch (error) {
+  } catch (error: any) {
     console.error('Login error:', error);
-    return { error: 'An unexpected error occurred during login.' };
+    return { error: `Server error: ${error.message || String(error)}` };
   }
 }
 
@@ -186,9 +186,9 @@ export async function verifyOTP(prevState: ActionState, formData: FormData): Pro
     // Create session
     await createSession(otpRecord.user_id);
 
-  } catch (error) {
+  } catch (error: any) {
     console.error('OTP verification error:', error);
-    return { error: 'An unexpected error occurred. Please try again.', otpRequired: true, email };
+    return { error: `Server error: ${error.message || String(error)}`, otpRequired: true, email };
   }
 
   redirect('/results');
@@ -254,9 +254,9 @@ export async function resendOTP(prevState: ActionState, formData: FormData): Pro
       success: true
     };
 
-  } catch (error) {
+  } catch (error: any) {
     console.error('Resend OTP error:', error);
-    return { error: 'Failed to resend verification code.', otpRequired: true, email };
+    return { error: `Server error: ${error.message || String(error)}`, otpRequired: true, email };
   }
 }
 
