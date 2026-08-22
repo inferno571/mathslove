@@ -8,51 +8,7 @@ import AIChat from '../components/AIChat';
 import Logo, { LogoIcon } from '../components/Logo';
 import { getCurrentTest } from '../lib/storage';
 
-// Bell curve SVG component
-function BellCurve({ iqScore }: { iqScore: number }) {
-  const width = 500, height = 200, padding = 40;
-  const points: string[] = [];
-  for (let x = 40; x <= 160; x += 1) {
-    const z = (x - 100) / 15;
-    const y = Math.exp(-0.5 * z * z) / (15 * Math.sqrt(2 * Math.PI));
-    const px = padding + ((x - 40) / 120) * (width - 2 * padding);
-    const py = height - padding - (y / 0.027) * (height - 2 * padding);
-    points.push(`${px},${py}`);
-  }
-  const markerX = padding + ((Math.min(Math.max(iqScore, 40), 160) - 40) / 120) * (width - 2 * padding);
-  const markerZ = (Math.min(Math.max(iqScore, 40), 160) - 100) / 15;
-  const markerY_val = Math.exp(-0.5 * markerZ * markerZ) / (15 * Math.sqrt(2 * Math.PI));
-  const markerY = height - padding - (markerY_val / 0.027) * (height - 2 * padding);
-
-  return (
-    <svg viewBox={`0 0 ${width} ${height}`} style={{ width: '100%', maxWidth: 500 }}>
-      <defs>
-        <linearGradient id="bellGrad" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stopColor="var(--teal)" stopOpacity="0.3" />
-          <stop offset="100%" stopColor="var(--teal)" stopOpacity="0.05" />
-        </linearGradient>
-      </defs>
-      <polygon
-        points={`${padding},${height - padding} ${points.join(' ')} ${width - padding},${height - padding}`}
-        fill="url(#bellGrad)" stroke="var(--teal)" strokeWidth="2"
-      />
-      {[55, 70, 85, 100, 115, 130, 145].map(v => {
-        const x = padding + ((v - 40) / 120) * (width - 2 * padding);
-        return (
-          <g key={v}>
-            <line x1={x} y1={height - padding} x2={x} y2={height - padding + 5} stroke="#ccc" />
-            <text x={x} y={height - padding + 18} textAnchor="middle" fontSize="11" fill="#999">{v}</text>
-          </g>
-        );
-      })}
-      <line x1={markerX} y1={markerY} x2={markerX} y2={height - padding} stroke="var(--copper)" strokeWidth="2" strokeDasharray="4" />
-      <circle cx={markerX} cy={markerY} r="6" fill="var(--copper)" stroke="white" strokeWidth="2" />
-      <text x={markerX} y={markerY - 12} textAnchor="middle" fontSize="12" fontWeight="700" fill="var(--copper)">{iqScore}</text>
-      <text x={width / 2} y={height - 4} textAnchor="middle" fontSize="11" fill="#999">IQ Score</text>
-      <text x={8} y={height / 2} textAnchor="middle" fontSize="10" fill="#999" transform={`rotate(-90, 8, ${height / 2})`}>Density</text>
-    </svg>
-  );
-}
+// BellCurve component removed as IQ score display is replaced with percentage
 
 // Confidence chart
 function ConfidenceChart({ answers, questions }: { answers: TestResult['answers']; questions: TestResult['questions'] }) {
@@ -163,12 +119,7 @@ export default function ResultsPage() {
   const enrichedQs = result.questions.filter(isEnrichedQuestion) as EnrichedQuestion[];
   const date = new Date(result.timestamp).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
 
-  // IQ comparison data
-  const comparisons = [
-    { label: 'Your Score', value: result.iqScore, color: result.iqScore < 85 ? '#ef4444' : result.iqScore < 100 ? '#f59e0b' : result.iqScore < 115 ? '#22c55e' : '#1B2B5E' },
-    { label: 'Average Student', value: 100, color: '#2B7CE9' },
-    { label: 'Top Performers', value: 130, color: '#22c55e' },
-  ];
+  // IQ comparison data removed
 
   // Capacity colors
   const capacityColors: Record<string, string> = {
@@ -195,7 +146,7 @@ export default function ResultsPage() {
         <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
           <LogoIcon size={50} />
           <div>
-            <div className="results-header-info"><strong>MathsLove IQ Results</strong></div>
+            <div className="results-header-info"><strong>MathsLove Results</strong></div>
             <div className="results-header-info">Date: {date} &bull; {result.grade.replace('grade_', 'Grade ')} Test</div>
           </div>
         </div>
@@ -206,21 +157,18 @@ export default function ResultsPage() {
         {/* Hero: IQ + Percentile */}
         <div className="results-hero">
           <div className="iq-card">
-            <div style={{ fontSize: '0.9rem', color: 'var(--text-light)', marginBottom: 8 }}>Your Math IQ Score</div>
+            <div style={{ fontSize: '0.9rem', color: 'var(--text-light)', marginBottom: 8 }}>Your Score</div>
             <div className="iq-score-display">
-              {result.iqScore}<span className="iq-check">&#10003;</span>
+              {Math.round((result.score / result.maxScore) * 100)}%
             </div>
-            <div className="iq-label">IQ: {result.iqScore}</div>
-            <div style={{ marginTop: 24 }}>
-              <BellCurve iqScore={result.iqScore} />
-            </div>
+            <div className="iq-label">{result.score} out of {result.maxScore} correct</div>
           </div>
 
           <div className="percentile-card">
             <div className="percentile-badge">{result.percentile}%</div>
             <h3 style={{ marginBottom: 12 }}>Performance Summary</h3>
             <p className="percentile-text">
-              You scored <strong>IQ {result.iqScore}</strong>, performing better than <strong>{result.percentile}%</strong> of
+              You performed better than <strong>{result.percentile}%</strong> of
               test takers. You answered <strong>{result.score}/{result.maxScore}</strong> questions correctly in <strong>{formatTime(result.totalTime)}</strong>.
               {result.cognitiveBreakdown && result.cognitiveBreakdown.length > 0 && (
                 <> Your strongest area was <strong>
@@ -231,26 +179,7 @@ export default function ResultsPage() {
           </div>
         </div>
 
-        {/* IQ Comparison */}
-        <div className="iq-comparison">
-          <h3>IQ Score vs Average</h3>
-          {comparisons.map(c => (
-            <div className="comparison-row" key={c.label}>
-              <div className="comparison-label">{c.label}</div>
-              <div className="comparison-bar-track">
-                <div className="comparison-bar-fill" style={{
-                  width: `${(c.value / 145) * 100}%`,
-                  background: `linear-gradient(90deg, ${c.color}, ${c.color}dd)`,
-                }}>{c.value}</div>
-              </div>
-            </div>
-          ))}
-          <div style={{ display: 'flex', justifyContent: 'space-between', paddingLeft: 176, fontSize: '0.7rem', color: 'var(--text-muted)', marginTop: 8 }}>
-            {[40, 55, 70, 85, 100, 115, 130, 145].map(v => <span key={v}>{v}</span>)}
-          </div>
-        </div>
-
-        {/* Intellectual Capacities */}
+        {/* Breakdown by Domain */}
         {result.cognitiveBreakdown && result.cognitiveBreakdown.length > 0 && (
           <div className="capacities-section">
             <h3>Intellectual Capacities</h3>

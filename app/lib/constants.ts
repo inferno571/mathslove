@@ -48,4 +48,4 @@ export const GRADE_CONFIGS: GradeConfig[] = [
 ];
 
 export const QUESTIONS_PER_TEST = 10;
-export const TEST_TIME_LIMIT = 600; // 10 minutes in seconds
+export const TEST_TIME_LIMIT = 360; // 6 minutes in seconds

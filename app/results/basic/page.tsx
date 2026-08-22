@@ -45,11 +45,6 @@ export default function BasicResultsPage() {
           <div className="basic-score-label">
             Completed in {formatTime(result.totalTime)}
           </div>
-          <div style={{ marginTop: 16 }}>
-            <div className="iq-label" style={{ fontSize: '1.1rem' }}>
-              Estimated IQ: <strong style={{ color: 'var(--teal)', fontSize: '1.3rem' }}>{result.iqScore}</strong>
-            </div>
-          </div>
         </div>
 
         <div className="coming-soon-banner">
