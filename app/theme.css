@@ -1,21 +1,21 @@
 :root {
   /* 1. Main Structural Color (Hero, Navbar, Footer) */
-  --theme-hero: #a20000;
-  --theme-hero-dark: #7a0000;
+  --theme-hero: #0F172A;
+  --theme-hero-dark: #020617;
 
   /* 2. Call to Action (Primary Buttons, Links) */
-  --theme-cta: #ffaa49;
-  --theme-cta-dark: #e59942;
+  --theme-cta: #3B82F6;
+  --theme-cta-dark: #2563EB;
 
   /* 3. Accent (Highlights, Badges, Logo Elements) */
-  --theme-accent: #ffaa49;
-  --theme-accent-dark: #e59942;
+  --theme-accent: #10B981;
+  --theme-accent-dark: #059669;
 
   /* 4. Surface Colors (Backgrounds, Borders) */
   --theme-white: #FFFFFF;
-  --theme-secondary: #fffaf5;
+  --theme-secondary: #F8FAFC;
 
   /* 5. Text Colors */
-  --theme-text-main: #2a0808;
-  --theme-text-muted: #734b4b;
+  --theme-text-main: #0F172A;
+  --theme-text-muted: #64748B;
 }
