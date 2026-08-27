@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@hcaptcha/react-hcaptcha": "^2.2.0",
     "@vercel/postgres": "^0.10.0",
     "bcryptjs": "^3.0.3",
     "jose": "^6.2.8",
@@ -23,6 +24,7 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "typescript": "^5"
+    "typescript": "^5",
+    "xlsx": "^0.18.5"
   }
 }

@@ -756,3 +756,130 @@ button {
   }
 }
 
+/* ===== PASSWORD STRENGTH BAR ===== */
+.password-strength-wrapper {
+  margin-top: 8px;
+}
+
+.password-strength-bar {
+  display: flex;
+  gap: 4px;
+  height: 5px;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.password-strength-segment {
+  flex: 1;
+  height: 100%;
+  border-radius: 999px;
+  background: #e2e8f0;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.password-strength-segment.active {
+  transform: scaleY(1.2);
+}
+
+/* Strength levels */
+.strength-weak .password-strength-segment:nth-child(1) { background: #ef4444; }
+
+.strength-fair .password-strength-segment:nth-child(1),
+.strength-fair .password-strength-segment:nth-child(2) { background: #f97316; }
+
+.strength-good .password-strength-segment:nth-child(1),
+.strength-good .password-strength-segment:nth-child(2),
+.strength-good .password-strength-segment:nth-child(3) { background: #eab308; }
+
+.strength-strong .password-strength-segment { background: #22c55e; }
+
+.password-strength-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-top: 5px;
+  transition: color 0.3s ease;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.strength-weak .password-strength-label  { color: #ef4444; }
+.strength-fair .password-strength-label  { color: #f97316; }
+.strength-good .password-strength-label  { color: #eab308; }
+.strength-strong .password-strength-label { color: #22c55e; }
+
+/* Password input wrapper with show/hide toggle */
+.password-input-wrapper {
+  position: relative;
+}
+
+.password-toggle-btn {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  padding: 4px;
+  color: var(--text-light);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  transition: color 0.2s ease, background 0.2s ease;
+}
+
+.password-toggle-btn:hover {
+  color: var(--navy);
+  background: rgba(27, 43, 94, 0.06);
+  transform: translateY(-50%);
+  box-shadow: none;
+}
+
+/* Forgot password link */
+.forgot-password-link {
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--blue);
+  cursor: pointer;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+  display: inline-block;
+  margin-top: 4px;
+}
+
+.forgot-password-link:hover {
+  opacity: 0.75;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Forgot password step indicator */
+.fp-step-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin-bottom: 24px;
+}
+
+.fp-step-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #e2e8f0;
+  transition: all 0.3s ease;
+}
+
+.fp-step-dot.active {
+  background: var(--blue);
+  width: 24px;
+  border-radius: 4px;
+}
+
+.fp-step-dot.done {
+  background: var(--success);
+}

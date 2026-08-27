@@ -30,6 +30,8 @@ interface LocalDbSchema {
     password_hash: string;
     location: string;
     board: string;
+    mobile: string;
+    email_verified: boolean;
     created_at: string;
     updated_at: string;
   }>;
@@ -116,17 +118,18 @@ function createLocalDbClient(): DbClient {
         return { rows: rows as T[], rowCount: rows.length };
       }
 
-      // Login user query: SELECT id, password_hash FROM users WHERE email = $1
-      if (/SELECT\s+id,\s*password_hash\s+FROM\s+users\s+WHERE\s+email\s*=/i.test(query)) {
+      // Login user query: SELECT id, password_hash, email_verified FROM users WHERE email = $1
+      if (/SELECT\s+id,\s*password_hash,\s*email_verified\s+FROM\s+users\s+WHERE\s+email\s*=/i.test(query)) {
         const email = values[0];
         const user = db.users.find(u => u.email.toLowerCase() === String(email).toLowerCase());
-        const rows = user ? [{ id: user.id, password_hash: user.password_hash }] : [];
+        // Treat missing email_verified as true for backwards compatibility
+        const rows = user ? [{ id: user.id, password_hash: user.password_hash, email_verified: user.email_verified !== false }] : [];
         return { rows: rows as T[], rowCount: rows.length };
       }
 
       // Signup insert: INSERT INTO users ... RETURNING id
       if (/INSERT\s+INTO\s+users/i.test(query)) {
-        const [parent_name, student_name, email, password_hash, location, board] = values;
+        const [parent_name, student_name, email, password_hash, location, board, mobile] = values;
         db.counters.users += 1;
         const newId = db.counters.users;
         const newUser = {
@@ -137,12 +140,41 @@ function createLocalDbClient(): DbClient {
           password_hash: String(password_hash || ''),
           location: String(location || ''),
           board: String(board || 'US Common Core'),
+          mobile: String(mobile || ''),
+          email_verified: false,
           created_at: now,
           updated_at: now,
         };
         db.users.push(newUser);
         saveLocalDb(db);
         return { rows: [{ id: newId }] as T[], rowCount: 1 };
+      }
+
+      // Mark user email verified: UPDATE users SET email_verified = TRUE WHERE id = $1
+      if (/UPDATE\s+users\s+SET\s+email_verified\s*=\s*(TRUE|1)\s+WHERE\s+id\s*=/i.test(query)) {
+        const id = Number(values[0]);
+        const user = db.users.find(u => u.id === id);
+        if (user) {
+          user.email_verified = true;
+          user.updated_at = now;
+          saveLocalDb(db);
+          return { rows: [] as T[], rowCount: 1 };
+        }
+        return { rows: [] as T[], rowCount: 0 };
+      }
+
+      // Reset user password: UPDATE users SET password_hash = $1 WHERE id = $2
+      if (/UPDATE\s+users\s+SET\s+password_hash\s*=\s*\$1\s+WHERE\s+id\s*=/i.test(query)) {
+        const password_hash = String(values[0]);
+        const id = Number(values[1]);
+        const user = db.users.find(u => u.id === id);
+        if (user) {
+          user.password_hash = password_hash;
+          user.updated_at = now;
+          saveLocalDb(db);
+          return { rows: [] as T[], rowCount: 1 };
+        }
+        return { rows: [] as T[], rowCount: 0 };
       }
 
       // ── OTP Queries ───────────────────────────────────────────────

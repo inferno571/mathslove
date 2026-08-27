@@ -5,11 +5,26 @@ const resend = new Resend(process.env.RESEND_API_KEY || 're_dummy_key_please_set
 
 const FROM_EMAIL = process.env.FROM_EMAIL || 'MathsLove <onboarding@resend.dev>';
 
-export async function sendOTPEmail(email: string, code: string) {
+export async function sendOTPEmail(
+  email: string,
+  code: string,
+  context: 'signup' | 'forgot_password' = 'signup'
+) {
+  const isForgotPassword = context === 'forgot_password';
+
+  const subject = isForgotPassword
+    ? `${code} is your MathsLove password reset code`
+    : `${code} is your MathsLove verification code`;
+
+  const heading = isForgotPassword ? 'Reset your password' : 'Verify your email';
+  const bodyText = isForgotPassword
+    ? 'Use the code below to reset your MathsLove account password. This code expires in 5 minutes.'
+    : 'Enter the following code to verify your email address. This code expires in 5 minutes.';
+
   const { error } = await resend.emails.send({
     from: FROM_EMAIL,
     to: email,
-    subject: `${code} is your MathsLove verification code`,
+    subject,
     html: `
       <!DOCTYPE html>
       <html>
@@ -34,9 +49,9 @@ export async function sendOTPEmail(email: string, code: string) {
                 <!-- Body -->
                 <tr>
                   <td style="padding: 40px 32px;">
-                    <h2 style="color:#1b2b5e; margin:0 0 8px; font-size:20px;">Verify your login</h2>
+                    <h2 style="color:#1b2b5e; margin:0 0 8px; font-size:20px;">${heading}</h2>
                     <p style="color:#64748b; margin:0 0 32px; font-size:15px; line-height:1.6;">
-                      Enter the following code to complete your sign-in. This code expires in 5 minutes.
+                      ${bodyText}
                     </p>
                     <!-- OTP Code -->
                     <div style="background:#f1f5f9; border-radius:12px; padding:24px; text-align:center; margin-bottom:32px;">

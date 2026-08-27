@@ -1,160 +1,32 @@
 'use client';
 
 import { useActionState, useState, useRef, useEffect, useCallback } from 'react';
+import dynamic from 'next/dynamic';
 import Link from 'next/link';
-import { login, verifyOTP, resendOTP } from '../actions/auth';
+import { login } from '../actions/auth';
 import type { ActionState } from '../actions/auth';
 import Logo from '../components/Logo';
 
-function OTPInput({ onDigitsChange }: { onDigitsChange: (code: string) => void }) {
-  const [digits, setDigits] = useState<string[]>(['', '', '', '', '', '']);
-  const inputRefs = useRef<(HTMLInputElement | null)[]>([]);
-
-  useEffect(() => {
-    inputRefs.current[0]?.focus();
-  }, []);
-
-  // Notify parent whenever digits change
-  useEffect(() => {
-    onDigitsChange(digits.join(''));
-  }, [digits, onDigitsChange]);
-
-  const handleChange = useCallback((index: number, value: string) => {
-    const digit = value.replace(/\D/g, '').slice(-1);
-
-    setDigits(prev => {
-      const updated = [...prev];
-      updated[index] = digit;
-      return updated;
-    });
-
-    if (digit && index < 5) {
-      inputRefs.current[index + 1]?.focus();
-    }
-  }, []);
-
-  const handleKeyDown = useCallback((index: number, e: React.KeyboardEvent<HTMLInputElement>) => {
-    if (e.key === 'Backspace' && !digits[index] && index > 0) {
-      inputRefs.current[index - 1]?.focus();
-      setDigits(prev => {
-        const updated = [...prev];
-        updated[index - 1] = '';
-        return updated;
-      });
-    }
-    if (e.key === 'ArrowLeft' && index > 0) {
-      inputRefs.current[index - 1]?.focus();
-    }
-    if (e.key === 'ArrowRight' && index < 5) {
-      inputRefs.current[index + 1]?.focus();
-    }
-  }, [digits]);
-
-  const handlePaste = useCallback((e: React.ClipboardEvent) => {
-    e.preventDefault();
-    const pasted = e.clipboardData.getData('text').replace(/\D/g, '').slice(0, 6);
-    if (pasted.length === 0) return;
-
-    const updated = ['', '', '', '', '', ''];
-    for (let i = 0; i < 6; i++) {
-      updated[i] = pasted[i] || '';
-    }
-    setDigits(updated);
-
-    const nextEmpty = updated.findIndex(d => d === '');
-    inputRefs.current[nextEmpty === -1 ? 5 : nextEmpty]?.focus();
-  }, []);
-
-  return (
-    <div className="otp-input-group" onPaste={handlePaste}>
-      {digits.map((digit, i) => (
-        <input
-          key={i}
-          ref={el => { inputRefs.current[i] = el; }}
-          type="text"
-          inputMode="numeric"
-          maxLength={1}
-          value={digit}
-          onChange={e => handleChange(i, e.target.value)}
-          onKeyDown={e => handleKeyDown(i, e)}
-          className={`otp-digit-input ${digit ? 'filled' : ''}`}
-          autoComplete="one-time-code"
-          aria-label={`Digit ${i + 1}`}
-        />
-      ))}
-    </div>
-  );
-}
-
-function ResendButton({ email }: { email: string }) {
-  const [state, action, pending] = useActionState(resendOTP, {} as ActionState);
-  const [cooldown, setCooldown] = useState(30);
-  const [isCoolingDown, setIsCoolingDown] = useState(true);
-
-  useEffect(() => {
-    if (!isCoolingDown) return;
-    if (cooldown <= 0) {
-      setIsCoolingDown(false);
-      return;
-    }
-    const timer = setTimeout(() => setCooldown(c => c - 1), 1000);
-    return () => clearTimeout(timer);
-  }, [cooldown, isCoolingDown]);
-
-  useEffect(() => {
-    if (state?.success) {
-      setCooldown(30);
-      setIsCoolingDown(true);
-    }
-  }, [state]);
-
-  return (
-    <div style={{ textAlign: 'center' }}>
-      {isCoolingDown ? (
-        <p className="otp-resend-cooldown">
-          Resend code in <span className="otp-cooldown-timer">{cooldown}s</span>
-        </p>
-      ) : (
-        <form action={action}>
-          <input type="hidden" name="email" value={email} />
-          <button
-            type="submit"
-            className="otp-resend-btn"
-            disabled={pending}
-          >
-            {pending ? 'Sending...' : 'Resend verification code'}
-          </button>
-        </form>
-      )}
-      {state?.error && (
-        <p style={{ color: 'var(--error)', fontSize: '0.8rem', marginTop: '8px' }}>{state.error}</p>
-      )}
-      {state?.message && !state?.error && (
-        <p style={{ color: 'var(--success)', fontSize: '0.8rem', marginTop: '8px' }}>{state.message}</p>
-      )}
-    </div>
-  );
-}
+const HCaptcha = dynamic(() => import('../components/HCaptcha'), { ssr: false });
 
 export default function LoginPage() {
   const [loginState, loginAction, loginPending] = useActionState(login, {} as ActionState);
-  const [otpState, otpAction, otpPending] = useActionState(verifyOTP, {} as ActionState);
-  const [otpCode, setOtpCode] = useState('');
-  const formRef = useRef<HTMLFormElement>(null);
+  const [captchaToken, setCaptchaToken] = useState<string | null>(null);
+  const captchaResetRef = useRef<(() => void) | null>(null);
 
-  const showOTP = loginState?.otpRequired || otpState?.otpRequired;
-  const currentEmail = otpState?.email || loginState?.email || '';
-
-  // Auto-submit when all 6 digits are entered
+  // Reset captcha when there's an error so the user can try again
   useEffect(() => {
-    if (otpCode.length === 6 && formRef.current && !otpPending) {
-      formRef.current.requestSubmit();
+    if (loginState?.error) {
+      captchaResetRef.current?.();
+      setCaptchaToken(null);
     }
-  }, [otpCode, otpPending]);
+  }, [loginState?.error]);
 
-  const handleDigitsChange = useCallback((code: string) => {
-    setOtpCode(code);
-  }, []);
+  // Inject captcha token into FormData before the server action runs
+  const handleLoginSubmit = useCallback(async (formData: FormData) => {
+    if (captchaToken) formData.set('h-captcha-response', captchaToken);
+    return loginAction(formData);
+  }, [captchaToken, loginAction]);
 
   return (
     <div className="landing" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: '100vh', background: 'var(--cream)' }}>
@@ -163,134 +35,81 @@ export default function LoginPage() {
           <Logo size={64} />
         </div>
 
-        <div className={`otp-step-container ${showOTP ? 'show-otp' : 'show-credentials'}`}>
-          {/* ===== STEP 1: Email + Password ===== */}
-          <div className={`otp-step ${!showOTP ? 'active' : 'inactive'}`}>
-            <h2 style={{ color: 'var(--navy)', marginBottom: '12px', textAlign: 'center' }}>Welcome Back</h2>
-            <p style={{ color: 'var(--text-light)', marginBottom: '32px', textAlign: 'center', fontSize: '0.95rem' }}>
-              Sign in to view your child&apos;s Math IQ results and detailed AI analysis.
-            </p>
+        <h2 style={{ color: 'var(--navy)', marginBottom: '12px', textAlign: 'center' }}>Welcome Back</h2>
+        <p style={{ color: 'var(--text-light)', marginBottom: '32px', textAlign: 'center', fontSize: '0.95rem' }}>
+          Sign in to view your child&apos;s Math IQ results and detailed AI analysis.
+        </p>
 
-            <form action={loginAction} style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
-              <div>
-                <label style={{ display: 'block', fontSize: '0.9rem', fontWeight: 600, marginBottom: '6px', color: 'var(--dark)' }}>Email Address</label>
-                <input
-                  type="email"
-                  name="email"
-                  required
-                  className="answer-input"
-                  style={{ padding: '12px 16px' }}
-                  placeholder="you@example.com"
-                />
-              </div>
-
-              <div>
-                <label style={{ display: 'block', fontSize: '0.9rem', fontWeight: 600, marginBottom: '6px', color: 'var(--dark)' }}>Password</label>
-                <input
-                  type="password"
-                  name="password"
-                  required
-                  className="answer-input"
-                  style={{ padding: '12px 16px' }}
-                  placeholder="••••••••"
-                />
-              </div>
-
-              {loginState?.error && !showOTP && (
-                <div className="otp-error-box">
-                  {loginState.error}
-                </div>
-              )}
-
-              <button
-                type="submit"
-                className="btn-primary"
-                style={{ marginTop: '8px', width: '100%' }}
-                disabled={loginPending}
-              >
-                {loginPending ? (
-                  <span className="otp-btn-loading">
-                    <span className="otp-spinner"></span>
-                    Verifying...
-                  </span>
-                ) : 'Continue'}
-              </button>
-            </form>
-
-            <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)', textAlign: 'center', marginTop: '24px' }}>
-              Don&apos;t have an account? <Link href="/signup" style={{ color: 'var(--blue)', fontWeight: 600 }}>Sign up</Link>
-            </p>
+        <form action={handleLoginSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+          <div>
+            <label style={{ display: 'block', fontSize: '0.9rem', fontWeight: 600, marginBottom: '6px', color: 'var(--dark)' }}>
+              Email Address
+            </label>
+            <input
+              id="login-email"
+              type="email"
+              name="email"
+              required
+              className="answer-input"
+              style={{ padding: '12px 16px' }}
+              placeholder="you@example.com"
+              autoComplete="email"
+            />
           </div>
 
-          {/* ===== STEP 2: OTP Verification ===== */}
-          {showOTP && (
-            <div className={`otp-step ${showOTP ? 'active' : 'inactive'}`}>
-              <div className="otp-email-badge">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <rect x="2" y="4" width="20" height="16" rx="2" />
-                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
-                </svg>
-                <span>Check your email</span>
-              </div>
+          <div>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '6px' }}>
+              <label style={{ fontSize: '0.9rem', fontWeight: 600, color: 'var(--dark)' }}>
+                Password
+              </label>
+              <Link href="/forgot-password" className="forgot-password-link">
+                Forgot password?
+              </Link>
+            </div>
+            <input
+              id="login-password"
+              type="password"
+              name="password"
+              required
+              className="answer-input"
+              style={{ padding: '12px 16px' }}
+              placeholder="••••••••"
+              autoComplete="current-password"
+            />
+          </div>
 
-              <h2 style={{ color: 'var(--navy)', marginBottom: '8px', textAlign: 'center', fontSize: '1.5rem' }}>
-                Enter verification code
-              </h2>
-              <p style={{ color: 'var(--text-light)', marginBottom: '8px', textAlign: 'center', fontSize: '0.9rem' }}>
-                We sent a 6-digit code to
-              </p>
-              <p style={{ color: 'var(--navy)', marginBottom: '28px', textAlign: 'center', fontSize: '0.95rem', fontWeight: 600 }}>
-                {currentEmail}
-              </p>
-
-              <form ref={formRef} action={otpAction} style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
-                <input type="hidden" name="email" value={currentEmail} />
-                <input type="hidden" name="code" value={otpCode} />
-
-                <OTPInput onDigitsChange={handleDigitsChange} />
-
-                {otpState?.error && (
-                  <div className="otp-error-box">
-                    {otpState.error}
-                  </div>
-                )}
-
-                {loginState?.message && !otpState?.error && (
-                  <div className="otp-success-box">
-                    {loginState.message}
-                  </div>
-                )}
-
-                <button
-                  type="submit"
-                  className="btn-primary"
-                  style={{ width: '100%' }}
-                  disabled={otpPending}
-                >
-                  {otpPending ? (
-                    <span className="otp-btn-loading">
-                      <span className="otp-spinner"></span>
-                      Verifying...
-                    </span>
-                  ) : 'Verify & Sign In'}
-                </button>
-              </form>
-
-              <div style={{ marginTop: '20px' }}>
-                <ResendButton email={currentEmail} />
-              </div>
-
-              <div style={{ textAlign: 'center', marginTop: '20px' }}>
-                <button
-                  className="otp-back-btn"
-                  onClick={() => window.location.reload()}
-                >
-                  ← Back to login
-                </button>
-              </div>
+          {loginState?.error && (
+            <div className="otp-error-box">
+              {loginState.error}
             </div>
           )}
-        </div>
+
+          {/* hCaptcha */}
+          <HCaptcha
+            onVerify={token => setCaptchaToken(token)}
+            onExpire={() => setCaptchaToken(null)}
+            resetRef={captchaResetRef}
+          />
+
+          <button
+            id="login-submit"
+            type="submit"
+            className="btn-primary"
+            style={{ marginTop: '4px', width: '100%' }}
+            disabled={loginPending || !captchaToken}
+          >
+            {loginPending ? (
+              <span className="otp-btn-loading">
+                <span className="otp-spinner"></span>
+                Signing in...
+              </span>
+            ) : 'Sign In'}
+          </button>
+        </form>
+
+        <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)', textAlign: 'center', marginTop: '24px' }}>
+          Don&apos;t have an account? <Link href="/signup" style={{ color: 'var(--blue)', fontWeight: 600 }}>Sign up</Link>
+        </p>
       </div>
     </div>
   );

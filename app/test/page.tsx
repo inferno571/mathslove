@@ -236,16 +236,23 @@ function TestContent() {
             {currentIndex < questions.length - 1 ? (
               <button className="btn-primary" onClick={() => goTo(currentIndex + 1)}>Next</button>
             ) : (
-              <button className="btn-secondary" onClick={() => setShowModal(true)}>Finish Test</button>
+              <button
+                className="btn-secondary"
+                onClick={() => setShowModal(true)}
+                disabled={answeredCount < questions.length}
+                title={answeredCount < questions.length ? `Answer ${questions.length - answeredCount} more question${questions.length - answeredCount !== 1 ? 's' : ''} to finish` : 'Submit your test'}
+                style={{
+                  opacity: answeredCount < questions.length ? 0.6 : 1,
+                  cursor: answeredCount < questions.length ? 'not-allowed' : 'pointer',
+                  position: 'relative',
+                }}
+              >
+                {answeredCount < questions.length
+                  ? `${questions.length - answeredCount} left`
+                  : 'Finish Test'}
+              </button>
             )}
           </div>
-          <button
-            className="btn-outline"
-            style={{ borderColor: 'var(--copper)', color: 'var(--copper)' }}
-            onClick={() => setShowModal(true)}
-          >
-            Submit All
-          </button>
         </div>
       </div>
 
@@ -253,15 +260,11 @@ function TestContent() {
         <div className="modal-overlay" onClick={() => setShowModal(false)}>
           <div className="modal" onClick={e => e.stopPropagation()}>
             <h3>Submit Your Test?</h3>
-            <p>Review your progress before submitting.</p>
+            <p>All {questions.length} questions answered — ready to submit!</p>
             <div className="modal-stats">
               <div className="modal-stat">
                 <div className="modal-stat-val">{answeredCount}</div>
                 <div className="modal-stat-label">Answered</div>
-              </div>
-              <div className="modal-stat">
-                <div className="modal-stat-val">{questions.length - answeredCount}</div>
-                <div className="modal-stat-label">Unanswered</div>
               </div>
               <div className="modal-stat">
                 <div className="modal-stat-val">{formatTime(totalTime)}</div>
