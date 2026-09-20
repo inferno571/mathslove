@@ -132,7 +132,7 @@ export async function signup(prevState: ActionState, formData: FormData): Promis
     };
 
   } catch (error: any) {
-    console.error('Signup error:', error);
+    console.error('Signup error:', error?.message || error, error?.stack);
     return { error: 'An unexpected error occurred during signup. Please try again.' };
   }
 }
@@ -176,7 +176,7 @@ export async function login(prevState: ActionState, formData: FormData): Promise
     await createSession(user.id);
 
   } catch (error: any) {
-    console.error('Login error:', error);
+    console.error('Login error:', error?.message || error, error?.stack);
     return { error: 'An unexpected error occurred during login. Please try again.' };
   }
 

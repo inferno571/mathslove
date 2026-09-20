@@ -8,17 +8,28 @@ export async function GET() {
     // Create users table
     await db.sql`
       CREATE TABLE IF NOT EXISTS users (
-        id            SERIAL PRIMARY KEY,
-        parent_name   VARCHAR(255) NOT NULL,
-        student_name  VARCHAR(255) NOT NULL,
-        email         VARCHAR(255) UNIQUE NOT NULL,
-        password_hash VARCHAR(255) NOT NULL,
-        location      VARCHAR(255) DEFAULT '',
-        board         VARCHAR(100) DEFAULT 'US Common Core',
-        created_at    TIMESTAMPTZ DEFAULT NOW(),
-        updated_at    TIMESTAMPTZ DEFAULT NOW()
+        id              SERIAL PRIMARY KEY,
+        parent_name     VARCHAR(255) NOT NULL,
+        student_name    VARCHAR(255) NOT NULL,
+        email           VARCHAR(255) UNIQUE NOT NULL,
+        password_hash   VARCHAR(255) NOT NULL,
+        location        VARCHAR(255) DEFAULT '',
+        board           VARCHAR(100) DEFAULT 'US Common Core',
+        mobile          VARCHAR(50) DEFAULT '',
+        email_verified  BOOLEAN DEFAULT FALSE,
+        created_at      TIMESTAMPTZ DEFAULT NOW(),
+        updated_at      TIMESTAMPTZ DEFAULT NOW()
       );
     `;
+
+    // Add columns if they don't exist (for existing databases)
+    try {
+      await db.sql`ALTER TABLE users ADD COLUMN IF NOT EXISTS mobile VARCHAR(50) DEFAULT ''`;
+    } catch (_) { /* column may already exist */ }
+
+    try {
+      await db.sql`ALTER TABLE users ADD COLUMN IF NOT EXISTS email_verified BOOLEAN DEFAULT FALSE`;
+    } catch (_) { /* column may already exist */ }
 
     // Create test_results table
     await db.sql`
