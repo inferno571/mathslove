@@ -156,8 +156,8 @@ export async function login(prevState: ActionState, formData: FormData): Promise
   try {
     const db = getDb();
 
-    // Find user with email_verified status
-    const result = await db.sql`SELECT id, password_hash, email_verified FROM users WHERE email = ${email}`;
+    // Find user
+    const result = await db.sql`SELECT id, password_hash FROM users WHERE email = ${email}`;
     const user = result.rows[0];
 
     if (!user) {
@@ -167,10 +167,6 @@ export async function login(prevState: ActionState, formData: FormData): Promise
     const passwordsMatch = await bcrypt.compare(password, user.password_hash);
     if (!passwordsMatch) {
       return { error: 'Invalid email or password.' };
-    }
-
-    if (user.email_verified === false) {
-      return { error: 'Please verify your email before logging in. Check your inbox for the verification code sent during signup.' };
     }
 
     await createSession(user.id);
