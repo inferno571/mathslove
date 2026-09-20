@@ -6,8 +6,9 @@ import { AuthProvider } from './components/AuthProvider';
 const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://mathslove.com';
 
 export const metadata: Metadata = {
-  title: "MathsLove - Love Maths. Think Better. | Math IQ Assessment",
-  description: "Take a scientifically designed Math IQ test with MathsLove. Select your grade level, answer 10 challenging questions, and receive a detailed IQ score with AI-powered analysis. Love Maths. Think Better.",
+  title: "MathsLove | Accurate Math IQ Assessment for Kids",
+  description: "Discover your child's mathematical intelligence with our scientifically designed Math IQ test. Calibrated for Grades 4-8, receive a detailed score and AI-powered analysis of cognitive strengths.",
+  keywords: ["Math IQ test", "Child math assessment", "Mathematical intelligence", "Online math test for kids", "AI math analysis", "Math skills evaluation"],
   openGraph: {
     title: "MathsLove | Math IQ Assessment",
     description: "Take a scientifically designed Math IQ test and discover your child's mathematical intelligence. Get detailed AI-powered analysis today.",
@@ -45,7 +46,7 @@ export default async function RootLayout({
     "@type": "EducationalOrganization",
     "name": "MathsLove",
     "url": baseUrl,
-    "logo": `${baseUrl}/favicon.ico`,
+    "logo": `${baseUrl}/icon.png`,
     "description": "A scientifically designed Math IQ assessment platform providing AI-powered analysis of mathematical intelligence.",
   };
 
