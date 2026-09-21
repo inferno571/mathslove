@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { getSession } from './lib/session';
 import { AuthProvider } from './components/AuthProvider';
+import { Analytics } from '@vercel/analytics/next';
 
 const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://mathslove.com';
 
@@ -64,6 +65,7 @@ export default async function RootLayout({
         <AuthProvider initialSession={serializableSession}>
           {children}
         </AuthProvider>
+        <Analytics />
       </body>
     </html>
   );
