@@ -18,7 +18,7 @@
   --dark-light: var(--theme-hero-dark);
   --text: var(--theme-text-main);
   --text-light: var(--theme-text-muted);
-  --text-muted: var(--theme-secondary);
+  --text-muted: var(--theme-text-muted);
   --success: #22c55e;
   --error: #ef4444;
   --warning: var(--theme-accent);
