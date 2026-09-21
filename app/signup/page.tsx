@@ -279,6 +279,10 @@ export default function SignupPage() {
                     type="tel"
                     name="mobile"
                     required
+                    minLength={7}
+                    maxLength={15}
+                    pattern="^[0-9\s\-\(\)]+$"
+                    title="Please enter a valid phone number (at least 7 digits)"
                     className="answer-input"
                     style={{ padding: '12px 16px', flex: 1 }}
                     placeholder="234 567 8900"
