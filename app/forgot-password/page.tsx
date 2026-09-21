@@ -252,7 +252,7 @@ export default function ForgotPasswordPage() {
 
   // Inject captcha token into FormData
   const handleFpSubmit = useCallback(async (formData: FormData) => {
-    if (captchaToken) formData.set('h-captcha-response', captchaToken);
+    if (captchaToken) formData.set('g-recaptcha-response', captchaToken);
     return fpAction(formData);
   }, [captchaToken, fpAction]);
 
@@ -298,7 +298,7 @@ export default function ForgotPasswordPage() {
 
               {fpState?.error && <div className="otp-error-box">{fpState.error}</div>}
 
-              {/* hCaptcha */}
+              {/* Google reCAPTCHA */}
               <HCaptcha
                 onVerify={token => setCaptchaToken(token)}
                 onExpire={() => setCaptchaToken(null)}

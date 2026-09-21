@@ -16,36 +16,31 @@ export type ActionState = {
   otpContext?: 'signup' | 'forgot_password';
 };
 
-// ── CAPTCHA verification ──────────────────────────────────────────────
+// ── CAPTCHA verification (Google reCAPTCHA v2) ───────────────────────
 async function verifyCaptcha(token: string | null): Promise<boolean> {
-  const secretKey = process.env.HCAPTCHA_SECRET_KEY;
+  const secretKey = process.env.RECAPTCHA_SECRET_KEY;
 
   // If no secret key configured, skip in development
   if (!secretKey) {
-    console.warn('[captcha] HCAPTCHA_SECRET_KEY not set — skipping captcha verification in dev');
-    return true;
-  }
-
-  // hCaptcha test secret always passes — good for local dev
-  if (secretKey === '0x0000000000000000000000000000000000000000') {
+    console.warn('[captcha] RECAPTCHA_SECRET_KEY not set — skipping captcha verification in dev');
     return true;
   }
 
   if (!token) return false;
 
   try {
-    const response = await fetch('https://hcaptcha.com/siteverify', {
+    const response = await fetch('https://www.google.com/recaptcha/api/siteverify', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: new URLSearchParams({ secret: secretKey, response: token }),
     });
     const data = await response.json();
     if (!data.success) {
-      console.warn('[captcha] hCaptcha verification failed:', data['error-codes']);
+      console.warn('[captcha] reCAPTCHA verification failed:', data['error-codes']);
     }
     return data.success === true;
   } catch (err) {
-    console.error('[captcha] Error calling hCaptcha API:', err);
+    console.error('[captcha] Error calling reCAPTCHA API:', err);
     return false;
   }
 }
@@ -59,16 +54,18 @@ function generateOTP(): string {
 
 // ── signup ───────────────────────────────────────────────────────────
 export async function signup(prevState: ActionState, formData: FormData): Promise<ActionState> {
-  const parentName = formData.get('parentName') as string;
   const studentName = formData.get('studentName') as string;
   const email = formData.get('email') as string;
   const password = formData.get('password') as string;
-  const mobile = (formData.get('mobile') as string) || '';
-  const location = (formData.get('location') as string) || '';
+  const countryCode = (formData.get('countryCode') as string) || '+1';
+  const mobileRaw = (formData.get('mobile') as string) || '';
+  const mobile = mobileRaw ? `${countryCode} ${mobileRaw}` : '';
+  const location = '';
   const board = (formData.get('board') as string) || 'US Common Core';
-  const captchaToken = formData.get('h-captcha-response') as string | null;
+  const parentName = '';
+  const captchaToken = formData.get('g-recaptcha-response') as string | null;
 
-  if (!parentName || !studentName || !email || !password) {
+  if (!studentName || !email || !password || !mobileRaw) {
     return { error: 'Please fill out all required fields.' };
   }
 
@@ -141,7 +138,7 @@ export async function signup(prevState: ActionState, formData: FormData): Promis
 export async function login(prevState: ActionState, formData: FormData): Promise<ActionState> {
   const email = formData.get('email') as string;
   const password = formData.get('password') as string;
-  const captchaToken = formData.get('h-captcha-response') as string | null;
+  const captchaToken = formData.get('g-recaptcha-response') as string | null;
 
   if (!email || !password) {
     return { error: 'Please provide both email and password.' };
@@ -301,7 +298,7 @@ export async function resendOTP(prevState: ActionState, formData: FormData): Pro
 // ── forgotPassword ────────────────────────────────────────────────────
 export async function forgotPassword(prevState: ActionState, formData: FormData): Promise<ActionState> {
   const email = formData.get('email') as string;
-  const captchaToken = formData.get('h-captcha-response') as string | null;
+  const captchaToken = formData.get('g-recaptcha-response') as string | null;
 
   if (!email) {
     return { error: 'Please enter your email address.' };

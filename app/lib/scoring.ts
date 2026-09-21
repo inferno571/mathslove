@@ -182,7 +182,8 @@ function normalCDF(x: number): number {
   return 0.5 * (1.0 + sign * y);
 }
 
-// Select random questions with difficulty distribution (for enriched)
+// Select random questions with balanced difficulty (5 Easy, 5 Medium, 5 Hard),
+// balanced across topics and cognitive domains
 export function selectRandomQuestions(questions: Question[], count: number): Question[] {
   if (questions.length <= count) return [...questions];
   
@@ -190,38 +191,92 @@ export function selectRandomQuestions(questions: Question[], count: number): Que
   
   if (isEnriched) {
     const enrichedQuestions = questions as EnrichedQuestion[];
-    const easy = enrichedQuestions.filter(q => q.difficulty === 'Easy');
-    const medium = enrichedQuestions.filter(q => q.difficulty === 'Medium');
-    const hard = enrichedQuestions.filter(q => q.difficulty === 'Hard');
+    const perDifficulty = Math.floor(count / 3); // 5 per difficulty for count=15
+    const remainder = count - perDifficulty * 3;
     
-    // Target: 2 easy, 5 medium, 3 hard
-    const selected: Question[] = [];
+    const easy = shuffleArray(enrichedQuestions.filter(q => q.difficulty === 'Easy'));
+    const medium = shuffleArray(enrichedQuestions.filter(q => q.difficulty === 'Medium'));
+    const hard = shuffleArray(enrichedQuestions.filter(q => q.difficulty === 'Hard'));
     
-    const pickRandom = (arr: Question[], n: number): Question[] => {
-      const shuffled = [...arr].sort(() => Math.random() - 0.5);
-      return shuffled.slice(0, n);
-    };
+    const selected: EnrichedQuestion[] = [];
     
-    selected.push(...pickRandom(easy, Math.min(2, easy.length)));
-    selected.push(...pickRandom(medium, Math.min(5, medium.length)));
-    selected.push(...pickRandom(hard, Math.min(3, hard.length)));
+    // Pick balanced questions from each difficulty tier
+    selected.push(...pickBalanced(easy, perDifficulty));
+    selected.push(...pickBalanced(medium, perDifficulty + (remainder > 0 ? 1 : 0)));
+    selected.push(...pickBalanced(hard, perDifficulty + (remainder > 1 ? 1 : 0)));
     
-    // Fill remaining if needed
-    while (selected.length < count) {
-      const remaining = questions.filter(q => !selected.includes(q));
-      if (remaining.length === 0) break;
-      const idx = Math.floor(Math.random() * remaining.length);
-      selected.push(remaining[idx]);
+    // Fill remaining if any tier was short
+    if (selected.length < count) {
+      const selectedIds = new Set(selected.map(q => q.id));
+      const remaining = shuffleArray(enrichedQuestions.filter(q => !selectedIds.has(q.id)));
+      selected.push(...remaining.slice(0, count - selected.length));
     }
     
-    // Shuffle final selection
-    return selected.sort(() => Math.random() - 0.5).slice(0, count);
+    // Shuffle final selection so difficulties are interleaved
+    return shuffleArray(selected).slice(0, count);
   } else {
     // Simple random selection for non-enriched
-    const shuffled = [...questions].sort(() => Math.random() - 0.5);
-    return shuffled.slice(0, count);
+    return shuffleArray([...questions]).slice(0, count);
   }
 }
+
+// Pick N questions balanced across topics and cognitive domains
+function pickBalanced(pool: EnrichedQuestion[], n: number): EnrichedQuestion[] {
+  if (pool.length <= n) return [...pool];
+  
+  // Group by topic
+  const byTopic: Record<string, EnrichedQuestion[]> = {};
+  for (const q of pool) {
+    const key = q.topic || 'Other';
+    if (!byTopic[key]) byTopic[key] = [];
+    byTopic[key].push(q);
+  }
+  
+  // Shuffle within each topic group
+  for (const key of Object.keys(byTopic)) {
+    byTopic[key] = shuffleArray(byTopic[key]);
+  }
+  
+  // Round-robin across topics, picking from least-used cognitive domain first
+  const selected: EnrichedQuestion[] = [];
+  const cogCounts: Record<string, number> = {};
+  const topicKeys = shuffleArray(Object.keys(byTopic));
+  
+  while (selected.length < n) {
+    let pickedAny = false;
+    for (const topic of topicKeys) {
+      if (selected.length >= n) break;
+      const available = byTopic[topic];
+      if (!available || available.length === 0) continue;
+      
+      // Sort remaining by least-used cognitive domain
+      available.sort((a, b) => {
+        const countA = cogCounts[a.cognitive_domain] || 0;
+        const countB = cogCounts[b.cognitive_domain] || 0;
+        return countA - countB;
+      });
+      
+      const pick = available.shift()!;
+      selected.push(pick);
+      cogCounts[pick.cognitive_domain] = (cogCounts[pick.cognitive_domain] || 0) + 1;
+      pickedAny = true;
+    }
+    if (!pickedAny) break; // all pools exhausted
+  }
+  
+  return selected;
+}
+
+// Fisher-Yates shuffle
+function shuffleArray<T>(arr: T[]): T[] {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
 
 // Format time in MM:SS
 export function formatTime(seconds: number): string {

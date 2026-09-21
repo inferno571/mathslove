@@ -24,7 +24,7 @@ export default function LoginPage() {
 
   // Inject captcha token into FormData before the server action runs
   const handleLoginSubmit = useCallback(async (formData: FormData) => {
-    if (captchaToken) formData.set('h-captcha-response', captchaToken);
+    if (captchaToken) formData.set('g-recaptcha-response', captchaToken);
     return loginAction(formData);
   }, [captchaToken, loginAction]);
 
@@ -84,7 +84,7 @@ export default function LoginPage() {
             </div>
           )}
 
-          {/* hCaptcha */}
+          {/* Google reCAPTCHA */}
           <HCaptcha
             onVerify={token => setCaptchaToken(token)}
             onExpire={() => setCaptchaToken(null)}

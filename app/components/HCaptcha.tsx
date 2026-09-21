@@ -1,38 +1,38 @@
 'use client';
 
-import HCaptchaLib from '@hcaptcha/react-hcaptcha';
+import ReCAPTCHA from 'react-google-recaptcha';
 import { useRef, useEffect } from 'react';
 
-interface HCaptchaProps {
+interface ReCaptchaProps {
   onVerify: (token: string) => void;
   onExpire?: () => void;
   /** Call this to programmatically reset the widget (e.g. on form error) */
   resetRef?: React.MutableRefObject<(() => void) | null>;
 }
 
-// hCaptcha test sitekey — works locally without any account.
-// Set NEXT_PUBLIC_HCAPTCHA_SITE_KEY in .env.local with your real key for production.
 const SITE_KEY =
-  process.env.NEXT_PUBLIC_HCAPTCHA_SITE_KEY ||
-  '10000000-ffff-ffff-ffff-000000000001';
+  process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY ||
+  '6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI'; // Google test key
 
-export default function HCaptcha({ onVerify, onExpire, resetRef }: HCaptchaProps) {
-  const captchaRef = useRef<HCaptchaLib | null>(null);
+export default function GoogleReCaptcha({ onVerify, onExpire, resetRef }: ReCaptchaProps) {
+  const captchaRef = useRef<ReCAPTCHA | null>(null);
 
   // Expose a reset function via the ref so parent forms can reset after errors
   useEffect(() => {
     if (resetRef) {
-      resetRef.current = () => captchaRef.current?.resetCaptcha();
+      resetRef.current = () => captchaRef.current?.reset();
     }
   }, [resetRef]);
 
   return (
     <div style={{ display: 'flex', justifyContent: 'center', marginTop: '4px' }}>
-      <HCaptchaLib
+      <ReCAPTCHA
         ref={captchaRef}
         sitekey={SITE_KEY}
-        onVerify={onVerify}
-        onExpire={() => {
+        onChange={(token: string | null) => {
+          if (token) onVerify(token);
+        }}
+        onExpired={() => {
           onExpire?.();
         }}
         theme="light"

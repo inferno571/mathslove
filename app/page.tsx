@@ -12,8 +12,48 @@ export default function Home() {
     router.push(`/test?grade=${gradeKey}`);
   };
 
+  const faqs = [
+    {
+      question: "What is MathsLove?",
+      answer: "MathsLove is an AI-powered platform designed to assess and analyze your child's mathematical intelligence through scientifically calibrated tests."
+    },
+    {
+      question: "How long does the test take?",
+      answer: "The test consists of 15 questions and typically takes about 5 to 15 minutes to complete, depending on the child's grade level and pace."
+    },
+    {
+      question: "Is the test free?",
+      answer: "Yes, you can take the basic assessment for free. We also offer detailed AI-powered insights to help you deeply understand your child's cognitive profile."
+    },
+    {
+      question: "What age group is this for?",
+      answer: "Our tests are currently calibrated for students in Grades 4 through 8, covering ages 9 to 14."
+    },
+    {
+      question: "How is the Math IQ calculated?",
+      answer: "The score is calculated based on accuracy, the difficulty of the specific questions answered, and the time taken to respond, providing a comprehensive measure of mathematical ability."
+    }
+  ];
+
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.map(faq => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer
+      }
+    }))
+  };
+
   return (
     <div className="landing">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       <nav className="nav" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
           <Logo size={48} showText textColor="white" />
@@ -27,7 +67,7 @@ export default function Home() {
           <h1>Get Your Child's <span style={{ color: '#F47920' }}>Math IQ</span> Measured</h1>
           <p>
             Discover your child's mathematical intelligence with our scientifically designed assessment.
-            10 questions. Detailed AI-powered analysis. Know their true Math IQ.
+            15 questions. Detailed AI-powered analysis. Know their true Math IQ.
           </p>
           <div className="hero-buttons">
             <button className="btn-primary" onClick={() => document.getElementById('grades')?.scrollIntoView({ behavior: 'smooth' })}>
@@ -90,8 +130,8 @@ export default function Home() {
             </div>
             <div className="step">
               <div className="step-num">2</div>
-              <h4>Answer 10 Questions</h4>
-              <p>Solve 10 carefully selected math problems. A timer tracks your speed per question.</p>
+              <h4>Answer 15 Questions</h4>
+              <p>Solve 15 carefully selected math problems. A timer tracks your speed per question.</p>
             </div>
             <div className="step">
               <div className="step-num">3</div>
@@ -117,6 +157,19 @@ export default function Home() {
         <button className="btn-primary" onClick={() => document.getElementById('grades')?.scrollIntoView({ behavior: 'smooth' })}>
           Take the Test
         </button>
+      </section>
+
+      <section className="section" id="faq">
+        <h2 className="section-title">Frequently Asked Questions</h2>
+        <p className="section-subtitle">Everything you need to know about the MathsLove IQ Assessment</p>
+        <div className="faq-container">
+          {faqs.map((faq, index) => (
+            <details key={index} className="faq-item">
+              <summary className="faq-summary">{faq.question}</summary>
+              <div className="faq-content">{faq.answer}</div>
+            </details>
+          ))}
+        </div>
       </section>
 
       <footer className="footer" style={{ display: 'flex', flexDirection: 'column', gap: '8px', alignItems: 'center' }}>

@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useCallback, useRef, Suspense } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
-import { GRADE_CONFIGS, QUESTIONS_PER_TEST } from '../lib/constants';
+import { GRADE_CONFIGS, QUESTIONS_PER_TEST, TEST_TIME_LIMIT } from '../lib/constants';
 import { Question, QuestionSet, UserAnswer, isEnrichedQuestion, EnrichedQuestion } from '../lib/types';
 import { checkAnswer, selectRandomQuestions, formatTime, buildTestResult } from '../lib/scoring';
 import Calculator from '../components/Calculator';
@@ -102,7 +102,7 @@ function TestContent() {
     if (index >= 0 && index < questions.length) setCurrentIndex(index);
   };
 
-  const handleSubmit = () => {
+  const handleSubmit = useCallback(() => {
     if (timerRef.current) clearInterval(timerRef.current);
     if (questionTimerRef.current) clearInterval(questionTimerRef.current);
 
@@ -118,7 +118,14 @@ function TestContent() {
     saveCurrentTest(result);
 
     router.push('/collect-info');
-  };
+  }, [questions, answers, timers, gradeKey, router]);
+
+  // Auto-submit when time limit reached
+  useEffect(() => {
+    if (totalTime >= TEST_TIME_LIMIT && questions.length > 0) {
+      handleSubmit();
+    }
+  }, [totalTime, questions.length, handleSubmit]);
 
   if (loading) {
     return (
@@ -146,8 +153,8 @@ function TestContent() {
         <div className="progress-bar-container">
           <div className="progress-bar-fill" style={{ width: `${((currentIndex + 1) / questions.length) * 100}%` }} />
         </div>
-        <div className={`timer-display ${totalTime > 540 ? 'timer-warning' : ''}`}>
-          {formatTime(totalTime)}
+        <div className={`timer-display ${totalTime > TEST_TIME_LIMIT - 60 ? 'timer-warning' : ''}`}>
+          {formatTime(TEST_TIME_LIMIT - totalTime > 0 ? TEST_TIME_LIMIT - totalTime : 0)}
         </div>
       </div>
 

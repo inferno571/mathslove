@@ -56,7 +56,29 @@ export const GRADE_CONFIGS: GradeConfig[] = [
     icon: '',
     color: '#c084fc',
   },
+  {
+    key: 'grade_9',
+    label: 'Grade 9',
+    gradeRange: '9',
+    ageRange: '14-15 years',
+    description: 'Real numbers & polynomials, coordinate geometry & linear equations, triangles & quadrilaterals, mensuration & statistics, and probability & reasoning.',
+    file: 'grade_9_set_normalized.json',
+    enriched: true,
+    icon: '',
+    color: '#ec4899',
+  },
+  {
+    key: 'grade_10',
+    label: 'Grade 10',
+    gradeRange: '10',
+    ageRange: '15-16 years',
+    description: 'Real numbers, polynomials & algebra, triangles, circles & geometry, trigonometry & applications, coordinate geometry, and statistics & probability.',
+    file: 'grade_10_set_normalized.json',
+    enriched: true,
+    icon: '',
+    color: '#ef4444',
+  },
 ];
 
-export const QUESTIONS_PER_TEST = 10;
-export const TEST_TIME_LIMIT = 360; // 6 minutes in seconds
+export const QUESTIONS_PER_TEST = 15;
+export const TEST_TIME_LIMIT = 600; // 10 minutes in seconds

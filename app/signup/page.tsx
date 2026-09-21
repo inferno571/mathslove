@@ -7,7 +7,7 @@ import { signup, verifyOTP, resendOTP } from '../actions/auth';
 import type { ActionState } from '../actions/auth';
 import Logo from '../components/Logo';
 
-// Lazy-load hCaptcha so it doesn't block the initial page render
+// Lazy-load reCAPTCHA so it doesn't block the initial page render
 const HCaptcha = dynamic(() => import('../components/HCaptcha'), { ssr: false });
 
 // ── Password Strength Bar ────────────────────────────────────────────
@@ -199,7 +199,7 @@ export default function SignupPage() {
 
   // Wrap signupAction to inject captcha token into FormData
   const handleSignupSubmit = useCallback(async (formData: FormData) => {
-    if (captchaToken) formData.set('h-captcha-response', captchaToken);
+    if (captchaToken) formData.set('g-recaptcha-response', captchaToken);
     return signupAction(formData);
   }, [captchaToken, signupAction]);
 
@@ -219,16 +219,10 @@ export default function SignupPage() {
             </p>
 
             <form action={handleSignupSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
-              {/* Names */}
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px' }}>
-                <div>
-                  <label style={{ display: 'block', fontSize: '0.9rem', fontWeight: 600, marginBottom: '6px', color: 'var(--dark)' }}>Parent&apos;s Name</label>
-                  <input type="text" name="parentName" required className="answer-input" style={{ padding: '12px 16px' }} placeholder="e.g., Jane Doe" />
-                </div>
-                <div>
-                  <label style={{ display: 'block', fontSize: '0.9rem', fontWeight: 600, marginBottom: '6px', color: 'var(--dark)' }}>Student&apos;s Name</label>
-                  <input type="text" name="studentName" required className="answer-input" style={{ padding: '12px 16px' }} placeholder="e.g., Alex" />
-                </div>
+              {/* Student Name */}
+              <div>
+                <label style={{ display: 'block', fontSize: '0.9rem', fontWeight: 600, marginBottom: '6px', color: 'var(--dark)' }}>Student&apos;s Name</label>
+                <input type="text" name="studentName" required className="answer-input" style={{ padding: '12px 16px' }} placeholder="e.g., Alex" />
               </div>
 
               {/* Email */}
@@ -237,19 +231,60 @@ export default function SignupPage() {
                 <input type="email" name="email" required className="answer-input" style={{ padding: '12px 16px' }} placeholder="you@example.com" autoComplete="email" />
               </div>
 
-              {/* Mobile */}
+              {/* Mobile with Country Code */}
               <div>
                 <label style={{ display: 'block', fontSize: '0.9rem', fontWeight: 600, marginBottom: '6px', color: 'var(--dark)' }}>
-                  Mobile Number <span style={{ fontWeight: 400, color: 'var(--text-light)', fontSize: '0.82rem' }}>(optional)</span>
+                  Mobile Number
                 </label>
-                <input
-                  type="tel"
-                  name="mobile"
-                  className="answer-input"
-                  style={{ padding: '12px 16px' }}
-                  placeholder="+1 234 567 8900"
-                  autoComplete="tel"
-                />
+                <div style={{ display: 'flex', gap: '8px' }}>
+                  <select
+                    name="countryCode"
+                    required
+                    className="answer-input"
+                    style={{ padding: '12px 10px', appearance: 'auto', width: '130px', flexShrink: 0 }}
+                    defaultValue="+1"
+                  >
+                    <option value="+1">🇺🇸 +1</option>
+                    <option value="+44">🇬🇧 +44</option>
+                    <option value="+91">🇮🇳 +91</option>
+                    <option value="+61">🇦🇺 +61</option>
+                    <option value="+86">🇨🇳 +86</option>
+                    <option value="+49">🇩🇪 +49</option>
+                    <option value="+33">🇫🇷 +33</option>
+                    <option value="+81">🇯🇵 +81</option>
+                    <option value="+82">🇰🇷 +82</option>
+                    <option value="+55">🇧🇷 +55</option>
+                    <option value="+7">🇷🇺 +7</option>
+                    <option value="+27">🇿🇦 +27</option>
+                    <option value="+971">🇦🇪 +971</option>
+                    <option value="+966">🇸🇦 +966</option>
+                    <option value="+65">🇸🇬 +65</option>
+                    <option value="+60">🇲🇾 +60</option>
+                    <option value="+234">🇳🇬 +234</option>
+                    <option value="+254">🇰🇪 +254</option>
+                    <option value="+63">🇵🇭 +63</option>
+                    <option value="+92">🇵🇰 +92</option>
+                    <option value="+880">🇧🇩 +880</option>
+                    <option value="+94">🇱🇰 +94</option>
+                    <option value="+977">🇳🇵 +977</option>
+                    <option value="+64">🇳🇿 +64</option>
+                    <option value="+353">🇮🇪 +353</option>
+                    <option value="+39">🇮🇹 +39</option>
+                    <option value="+34">🇪🇸 +34</option>
+                    <option value="+31">🇳🇱 +31</option>
+                    <option value="+46">🇸🇪 +46</option>
+                    <option value="+41">🇨🇭 +41</option>
+                  </select>
+                  <input
+                    type="tel"
+                    name="mobile"
+                    required
+                    className="answer-input"
+                    style={{ padding: '12px 16px', flex: 1 }}
+                    placeholder="234 567 8900"
+                    autoComplete="tel"
+                  />
+                </div>
               </div>
 
               {/* Password */}
@@ -260,31 +295,25 @@ export default function SignupPage() {
                 <p style={{ fontSize: '0.75rem', color: 'var(--text-light)', marginTop: '6px' }}>Must be at least 8 characters</p>
               </div>
 
-              {/* Location + Board */}
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px' }}>
-                <div>
-                  <label style={{ display: 'block', fontSize: '0.9rem', fontWeight: 600, marginBottom: '6px', color: 'var(--dark)' }}>Country (Optional)</label>
-                  <input type="text" name="location" className="answer-input" style={{ padding: '12px 16px' }} placeholder="e.g., United States" />
-                </div>
-                <div>
-                  <label style={{ display: 'block', fontSize: '0.9rem', fontWeight: 600, marginBottom: '6px', color: 'var(--dark)' }}>Curriculum</label>
-                  <select name="board" className="answer-input" style={{ padding: '12px 16px', appearance: 'auto' }} defaultValue="US Common Core">
-                    <option value="US Common Core">US Common Core</option>
-                    <option value="UK National Curriculum">UK National Curriculum</option>
-                    <option value="IB">International Baccalaureate (IB)</option>
-                    <option value="Cambridge">Cambridge (IGCSE)</option>
-                    <option value="CBSE">CBSE (India)</option>
-                    <option value="ICSE">ICSE (India)</option>
-                    <option value="Other">Other</option>
-                  </select>
-                </div>
+              {/* Curriculum */}
+              <div>
+                <label style={{ display: 'block', fontSize: '0.9rem', fontWeight: 600, marginBottom: '6px', color: 'var(--dark)' }}>Curriculum</label>
+                <select name="board" className="answer-input" style={{ padding: '12px 16px', appearance: 'auto' }} defaultValue="US Common Core">
+                  <option value="US Common Core">US Common Core</option>
+                  <option value="UK National Curriculum">UK National Curriculum</option>
+                  <option value="IB">International Baccalaureate (IB)</option>
+                  <option value="Cambridge">Cambridge (IGCSE)</option>
+                  <option value="CBSE">CBSE (India)</option>
+                  <option value="ICSE">ICSE (India)</option>
+                  <option value="Other">Other</option>
+                </select>
               </div>
 
               {signupState?.error && !showOTP && (
                 <div className="otp-error-box">{signupState.error}</div>
               )}
 
-              {/* hCaptcha */}
+              {/* Google reCAPTCHA */}
               <HCaptcha
                 onVerify={token => setCaptchaToken(token)}
                 onExpire={() => setCaptchaToken(null)}

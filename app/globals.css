@@ -175,6 +175,32 @@ button {
 .step h4 { margin-bottom: 8px; color: var(--dark); }
 .step p { font-size: 0.85rem; color: var(--text-light); }
 
+.faq-container {
+  display: flex; flex-direction: column; gap: 16px;
+  max-width: 800px; margin: 0 auto;
+}
+.faq-item {
+  background: white; border-radius: var(--radius);
+  box-shadow: var(--shadow); overflow: hidden;
+  transition: var(--transition);
+}
+.faq-item:hover { box-shadow: var(--shadow-lg); }
+.faq-summary {
+  padding: 20px 24px; font-weight: 600; color: var(--dark);
+  cursor: pointer; position: relative;
+  list-style: none; display: flex; justify-content: space-between; align-items: center;
+}
+.faq-summary::-webkit-details-marker { display: none; }
+.faq-summary::after {
+  content: '+'; font-size: 1.5rem; color: var(--blue);
+  transition: transform 0.3s ease;
+}
+details[open] .faq-summary::after { transform: rotate(45deg); }
+.faq-content {
+  padding: 0 24px 24px; color: var(--text-light); line-height: 1.6;
+  font-size: 0.95rem;
+}
+
 .footer {
   background: var(--navy);
   color: rgba(255,255,255,0.7);
