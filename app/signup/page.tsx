@@ -295,19 +295,7 @@ export default function SignupPage() {
                 <p style={{ fontSize: '0.75rem', color: 'var(--text-light)', marginTop: '6px' }}>Must be at least 8 characters</p>
               </div>
 
-              {/* Curriculum */}
-              <div>
-                <label style={{ display: 'block', fontSize: '0.9rem', fontWeight: 600, marginBottom: '6px', color: 'var(--dark)' }}>Curriculum</label>
-                <select name="board" className="answer-input" style={{ padding: '12px 16px', appearance: 'auto' }} defaultValue="US Common Core">
-                  <option value="US Common Core">US Common Core</option>
-                  <option value="UK National Curriculum">UK National Curriculum</option>
-                  <option value="IB">International Baccalaureate (IB)</option>
-                  <option value="Cambridge">Cambridge (IGCSE)</option>
-                  <option value="CBSE">CBSE (India)</option>
-                  <option value="ICSE">ICSE (India)</option>
-                  <option value="Other">Other</option>
-                </select>
-              </div>
+
 
               {signupState?.error && !showOTP && (
                 <div className="otp-error-box">{signupState.error}</div>
